@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="./manifest.json">
+    <title>SSC Mock Exam Platform</title>
+    <style>
+        :root {
+            --ssc-blue: #007bff;
+            --ssc-dark: #343a40;
+            --not-visited: #e9ecef;
+            --not-answered: #dc3545;
+            --answered: #28a745;
+            --marked: #6f42c1;
+            --answered-marked: #6f42c1;
+            --bg-color: #f4f6f9;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: #333;
+        }
+
+        /* --- Views --- */
+        .view { display: none; height: 100vh; flex-direction: column; }
+        .view.active { display: flex; }
+
+        /* --- Home View --- */
+        #home-view { justify-content: center; align-items: center; text-align: center; background: #fff;}
+        .home-card { padding: 40px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 400px; }
+        .home-card h1 { color: var(--ssc-blue); }
+        .btn { padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; margin-top: 10px; color: #fff;}
+        .btn-primary { background: var(--ssc-blue); }
+        .btn-secondary { background: var(--ssc-dark); }
+        .btn-success { background: var(--answered); }
+        .file-upload { margin: 20px 0; }
+
+        /* --- Exam View --- */
+        header { background: var(--ssc-blue); color: #fff; padding: 10px 20px; display: flex; justify-content: space-between; align-items: center; }
+        .timer-box { font-size: 20px; font-weight: bold; background: #fff; color: red; padding: 5px 15px; border-radius: 5px; }
+
+        .exam-container { display: flex; flex: 1; overflow: hidden; }
+        .main-content { flex: 1; display: flex; flex-direction: column; overflow-y: auto; padding: 20px; }
+        .sidebar { width: 300px; background: #fff; border-left: 1px solid #ddd; display: flex; flex-direction: column; }
+
+        .section-tabs { display: flex; border-bottom: 1px solid #ddd; margin-bottom: 20px; }
+        .tab { padding: 10px 15px; cursor: pointer; border: 1px solid transparent; border-bottom: none; }
+        .tab.active { background: #fff; border-color: #ddd; font-weight: bold; border-top: 3px solid var(--ssc-blue); }
+        .tab.locked { color: #999; cursor: not-allowed; }
+
+        .question-area { flex: 1; font-size: 18px; }
+        .options { margin-top: 20px; }
+        .option { display: block; margin-bottom: 10px; cursor: pointer; padding: 10px; border: 1px solid #ccc; border-radius: 5px; }
+        .option:hover { background: #f0f0f0; }
+        input[type="radio"] { margin-right: 10px; }
+
+        .action-bar { display: flex; gap: 10px; margin-top: 20px; border-top: 1px solid #ddd; padding-top: 20px; }
+        
+        .profile-area { padding: 20px; text-align: center; border-bottom: 1px solid #ddd; }
+        .palette-stats { padding: 10px; display: grid; grid-template-columns: 1fr 1fr; gap: 5px; font-size: 12px; border-bottom: 1px solid #ddd; }
+        .stat-item { display: flex; align-items: center; gap: 5px; }
+        .status-box { width: 15px; height: 15px; border-radius: 3px; display: inline-block; color:white; text-align:center; line-height:15px; font-size:10px; }
+        
+        .palette-grid { padding: 20px; display: flex; flex-wrap: wrap; gap: 10px; overflow-y: auto; }
+        .q-btn { width: 40px; height: 40px; border-radius: 50%; border: 1px solid #ccc; cursor: pointer; font-size: 14px; font-weight: bold; background: var(--not-visited); display: flex; align-items: center; justify-content: center;}
+        
+        .st-not-visited { background: var(--not-visited); color: #000; }
+        .st-not-answered { background: var(--not-answered); color: #fff; border-radius: 5px; }
+        .st-answered { background: var(--answered); color: #fff; border-radius: 5px 5px 0 0; }
+        .st-marked { background: var(--marked); color: #fff; border-radius: 50%; }
+        .st-answered-marked { background: var(--answered-marked); color: #fff; border-radius: 50%; position: relative; }
+        .st-answered-marked::after { content: '✓'; position: absolute; bottom: -5px; right: -5px; background: #28a745; border-radius: 50%; width: 14px; height: 14px; font-size: 10px; }
+        
+        /* --- Report View --- */
+        #report-view { padding: 40px; overflow-y: auto; }
+        .report-card { background: #fff; padding: 30px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); max-width: 800px; margin: 0 auto; }
+        .score-box { text-align: center; font-size: 30px; font-weight: bold; color: var(--ssc-blue); margin: 20px 0; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+        th { background: #f4f6f9; }
+        .correct-row { background-color: #d4edda; }
+        .wrong-row { background-color: #f8d7da; }
+    </style>
+</head>
+<body>
+
+    <!-- HOME VIEW -->
+    <div id="home-view" class="view active">
+        <div class="home-card">
+            <h1>SSC Exam Portal</h1>
+            <p>Upload your <code>exam.json</code> to begin</p>
+            <input type="file" id="exam-file" class="file-upload" accept=".json">
+            <br>
+            <input type="text" id="candidate-name" placeholder="Enter your name" style="padding: 10px; width: 80%; margin-bottom: 20px;">
+            <br>
+            <button class="btn btn-primary" onclick="startExam()">Start Exam</button>
+            <p style="margin-top:20px; font-size:12px; color:#666;">Or upload the provided exam.json</p>
+        </div>
+    </div>
+
+    <!-- EXAM VIEW -->
+    <div id="exam-view" class="view">
+        <header>
+            <div id="exam-title">SSC CGL Tier-I</div>
+            <div class="timer-box" id="timer-display">00:00:00</div>
+        </header>
+        <div class="exam-container">
+            <div class="main-content">
+                <div class="section-tabs" id="section-tabs">
+                    <!-- Tabs injected here -->
+                </div>
+                <div class="question-area">
+                    <h3 id="q-number">Question 1</h3>
+                    <p id="q-text">Loading...</p>
+                    <div class="options" id="options-container">
+                        <!-- Options injected here -->
+                    </div>
+                </div>
+                <div class="action-bar">
+                    <button class="btn btn-success" onclick="saveAndNext()">Save & Next</button>
+                    <button class="btn" style="background:#ffc107;" onclick="markAndNext()">Mark for Review & Next</button>
+                    <button class="btn btn-secondary" onclick="clearResponse()">Clear Response</button>
+                    <button class="btn" style="margin-left:auto; background:var(--ssc-dark);" onclick="submitExam()">Submit Exam</button>
+                </div>
+            </div>
+            
+            <div class="sidebar">
+                <div class="profile-area">
+                    <strong id="cand-name-display">Candidate Name</strong>
+                </div>
+                <div class="palette-stats">
+                    <div class="stat-item"><div class="status-box st-answered" id="cnt-answered">0</div> Answered</div>
+                    <div class="stat-item"><div class="status-box st-not-answered" id="cnt-not-answered">0</div> Not Answered</div>
+                    <div class="stat-item"><div class="status-box st-not-visited" id="cnt-not-visited">0</div> Not Visited</div>
+                    <div class="stat-item"><div class="status-box st-marked" id="cnt-marked">0</div> Marked</div>
+                    <div class="stat-item" style="grid-column: span 2;"><div class="status-box st-answered-marked" id="cnt-ans-marked">0</div> Answered & Marked for Review</div>
+                </div>
+                <div class="palette-grid" id="palette-grid">
+                    <!-- Question buttons injected here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- REPORT VIEW -->
+    <div id="report-view" class="view">
+        <div class="report-card">
+            <h2>Exam Report Card</h2>
+            <div class="score-box" id="final-score">Score: 0 / 0</div>
+            <h3>Section Analysis</h3>
+            <table id="section-table">
+                <thead>
+                    <tr>
+                        <th>Section</th>
+                        <th>Correct</th>
+                        <th>Incorrect</th>
+                        <th>Unattempted</th>
+                        <th>Score</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+
+            <h3 style="margin-top: 30px;">Question Review</h3>
+            <table id="q-review-table">
+                <thead>
+                    <tr>
+                        <th>Q#</th>
+                        <th>Question</th>
+                        <th>Your Answer</th>
+                        <th>Correct</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <button class="btn btn-primary" onclick="window.print()" style="margin-top:20px;">Print PDF</button>
+            <button class="btn btn-secondary" onclick="location.reload()" style="margin-top:20px;">Take Another Exam</button>
+        </div>
+    </div>
+
+    <script>
+        let examData = null;
+        let candidateName = "";
+        let currentSectionIdx = 0;
+        let currentQuestionIdx = 0;
+        let state = {}; // qId -> { status, selectedOption }
+        let timer = null;
+        let timeRemaining = 0;
+        let sectionLocked = []; // array of bools
+
+        const DOM = {
+            home: document.getElementById('home-view'),
+            exam: document.getElementById('exam-view'),
+            report: document.getElementById('report-view'),
+            file: document.getElementById('exam-file'),
+            qText: document.getElementById('q-text'),
+            qNumber: document.getElementById('q-number'),
+            options: document.getElementById('options-container'),
+            tabs: document.getElementById('section-tabs'),
+            palette: document.getElementById('palette-grid'),
+            timer: document.getElementById('timer-display')
+        };
+
+        // Load JSON File
+        DOM.file.addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            if (!file) return;
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                try {
+                    examData = JSON.parse(e.target.result);
+                    alert("Exam loaded successfully!");
+                } catch (err) {
+                    alert("Invalid JSON file.");
+                }
+            };
+            reader.readAsText(file);
+        });
+
+        function startExam() {
+            if (!examData) {
+                alert("Please upload exam.json first.");
+                return;
+            }
+            candidateName = document.getElementById('candidate-name').value || "Candidate";
+            document.getElementById('cand-name-display').innerText = candidateName;
+            document.getElementById('exam-title').innerText = examData.meta.title;
+            
+            // Initialize State
+            examData.sections.forEach((sec, sIdx) => {
+                sectionLocked[sIdx] = false;
+                sec.questions.forEach(q => {
+                    state[q.id] = { status: 'not_visited', selected: null, sectionIdx: sIdx };
+                });
+            });
+
+            DOM.home.classList.remove('active');
+            DOM.exam.classList.active = 'flex';
+            DOM.exam.classList.add('active');
+            
+            loadSection(0);
+        }
+
+        function loadSection(sIdx) {
+            if (sectionLocked[sIdx]) {
+                alert("This section is locked.");
+                return;
+            }
+            // Lock previous section if sectional timer mode
+            if (examData.meta.timer_mode === 'sectional' && currentSectionIdx !== sIdx) {
+                sectionLocked[currentSectionIdx] = true;
+            }
+            
+            currentSectionIdx = sIdx;
+            currentQuestionIdx = 0;
+            timeRemaining = examData.sections[sIdx].time;
+            
+            renderTabs();
+            renderPalette();
+            loadQuestion(0);
+            startTimer();
+        }
+
+        function renderTabs() {
+            DOM.tabs.innerHTML = '';
+            examData.sections.forEach((sec, idx) => {
+                const tab = document.createElement('div');
+                tab.className = `tab ${idx === currentSectionIdx ? 'active' : ''} ${sectionLocked[idx] ? 'locked' : ''}`;
+                tab.innerText = sec.name;
+                tab.onclick = () => {
+                    if (idx !== currentSectionIdx) loadSection(idx);
+                };
+                DOM.tabs.appendChild(tab);
+            });
+        }
+
+        function renderPalette() {
+            DOM.palette.innerHTML = '';
+            const sec = examData.sections[currentSectionIdx];
+            sec.questions.forEach((q, idx) => {
+                const btn = document.createElement('div');
+                const st = state[q.id].status;
+                btn.className = `q-btn st-${st.replace('_', '-')}`;
+                btn.innerText = idx + 1;
+                btn.onclick = () => loadQuestion(idx);
+                DOM.palette.appendChild(btn);
+            });
+            updateStats();
+        }
+
+        function loadQuestion(qIdx) {
+            currentQuestionIdx = qIdx;
+            const q = examData.sections[currentSectionIdx].questions[qIdx];
+            
+            if (state[q.id].status === 'not_visited') {
+                state[q.id].status = 'not_answered';
+            }
+
+            DOM.qNumber.innerText = `Question ${qIdx + 1}`;
+            DOM.qText.innerText = q.text;
+            
+            DOM.options.innerHTML = '';
+            q.options.forEach((opt, optIdx) => {
+                const label = document.createElement('label');
+                label.className = 'option';
+                const input = document.createElement('input');
+                input.type = 'radio';
+                input.name = 'option';
+                input.value = String.fromCharCode(65 + optIdx); // A, B, C, D
+                if (state[q.id].selected === input.value) input.checked = true;
+                
+                input.onchange = (e) => {
+                    state[q.id].selected = e.target.value;
+                };
+
+                label.appendChild(input);
+                label.appendChild(document.createTextNode(opt));
+                DOM.options.appendChild(label);
+            });
+            
+            renderPalette();
+        }
+
+        function getSelected() {
+            const selected = document.querySelector('input[name="option"]:checked');
+            return selected ? selected.value : null;
+        }
+
+        function saveAndNext() {
+            const q = examData.sections[currentSectionIdx].questions[currentQuestionIdx];
+            if (state[q.id].selected) {
+                state[q.id].status = 'answered';
+            } else {
+                state[q.id].status = 'not_answered';
+            }
+            goNext();
+        }
+
+        function markAndNext() {
+            const q = examData.sections[currentSectionIdx].questions[currentQuestionIdx];
+            if (state[q.id].selected) {
+                state[q.id].status = 'answered_marked';
+            } else {
+                state[q.id].status = 'marked';
+            }
+            goNext();
+        }
+
+        function clearResponse() {
+            const q = examData.sections[currentSectionIdx].questions[currentQuestionIdx];
+            state[q.id].selected = null;
+            state[q.id].status = 'not_answered';
+            const radios = document.querySelectorAll('input[name="option"]');
+            radios.forEach(r => r.checked = false);
+            renderPalette();
+        }
+
+        function goNext() {
+            const sec = examData.sections[currentSectionIdx];
+            if (currentQuestionIdx < sec.questions.length - 1) {
+                loadQuestion(currentQuestionIdx + 1);
+            } else {
+                renderPalette();
+                alert("End of section reached. Switch tab or submit.");
+            }
+        }
+
+        function updateStats() {
+            const sec = examData.sections[currentSectionIdx];
+            let counts = { answered: 0, not_answered: 0, not_visited: 0, marked: 0, answered_marked: 0 };
+            sec.questions.forEach(q => {
+                counts[state[q.id].status]++;
+            });
+            document.getElementById('cnt-answered').innerText = counts.answered;
+            document.getElementById('cnt-not-answered').innerText = counts.not_answered;
+            document.getElementById('cnt-not-visited').innerText = counts.not_visited;
+            document.getElementById('cnt-marked').innerText = counts.marked;
+            document.getElementById('cnt-ans-marked').innerText = counts.answered_marked;
+        }
+
+        function startTimer() {
+            clearInterval(timer);
+            timer = setInterval(() => {
+                timeRemaining--;
+                let h = Math.floor(timeRemaining / 3600);
+                let m = Math.floor((timeRemaining % 3600) / 60);
+                let s = timeRemaining % 60;
+                DOM.timer.innerText = `${h.toString().padStart(2, '0')}:${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
+                
+                if (timeRemaining <= 0) {
+                    clearInterval(timer);
+                    alert("Time's up for this section!");
+                    sectionLocked[currentSectionIdx] = true;
+                    // Try to move to next section
+                    if (currentSectionIdx < examData.sections.length - 1) {
+                        loadSection(currentSectionIdx + 1);
+                    } else {
+                        submitExam();
+                    }
+                }
+            }, 1000);
+        }
+
+        function submitExam() {
+            if(!confirm("Are you sure you want to submit the exam?")) return;
+            clearInterval(timer);
+            DOM.exam.classList.remove('active');
+            DOM.report.classList.add('active');
+            generateReport();
+        }
+
+        function generateReport() {
+            let totalScore = 0;
+            let totalMax = 0;
+            const neg = examData.meta.negative_marking;
+            const secTbody = document.querySelector('#section-table tbody');
+            const qTbody = document.querySelector('#q-review-table tbody');
+            
+            examData.sections.forEach((sec, sIdx) => {
+                let secCorrect = 0;
+                let secWrong = 0;
+                let secUnattempted = 0;
+
+                sec.questions.forEach((q, qIdx) => {
+                    totalMax += 1;
+                    const st = state[q.id];
+                    let isAttempted = (st.status === 'answered' || st.status === 'answered_marked');
+                    let statusStr = "Unattempted";
+                    let rowClass = "";
+
+                    if (isAttempted) {
+                        if (st.selected === q.correct) {
+                            secCorrect++;
+                            totalScore += 1;
+                            statusStr = "Correct (+1)";
+                            rowClass = "correct-row";
+                        } else {
+                            secWrong++;
+                            totalScore -= neg;
+                            statusStr = `Wrong (-${neg})`;
+                            rowClass = "wrong-row";
+                        }
+                    } else {
+                        secUnattempted++;
+                    }
+
+                    const tr = document.createElement('tr');
+                    tr.className = rowClass;
+                    tr.innerHTML = `
+                        <td>${sIdx + 1}.${qIdx + 1}</td>
+                        <td>${q.text}<br><small><i>${q.explanation}</i></small></td>
+                        <td>${st.selected || '-'}</td>
+                        <td>${q.correct}</td>
+                        <td>${statusStr}</td>
+                    `;
+                    qTbody.appendChild(tr);
+                });
+
+                let secScore = secCorrect - (secWrong * neg);
+                const trSec = document.createElement('tr');
+                trSec.innerHTML = `
+                    <td>${sec.name}</td>
+                    <td>${secCorrect}</td>
+                    <td>${secWrong}</td>
+                    <td>${secUnattempted}</td>
+                    <td>${secScore}</td>
+                `;
+                secTbody.appendChild(trSec);
+            });
+
+            document.getElementById('final-score').innerText = `Score: ${totalScore} / ${totalMax}`;
+        }
+
+        // Register Service Worker for Offline PWA Support
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./sw.js')
+                    .then(reg => console.log('Service Worker registered!', reg))
+                    .catch(err => console.log('Service Worker failed', err));
+            });
+        }
+    </script>
+</body>
+</html>
