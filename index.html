@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="manifest" href="./manifest.json">
     <title>SSC Mock Exam Platform</title>
     <style>
         :root {
@@ -474,15 +473,6 @@
             });
 
             document.getElementById('final-score').innerText = `Score: ${totalScore} / ${totalMax}`;
-        }
-
-        // Register Service Worker for Offline PWA Support
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('./sw.js')
-                    .then(reg => console.log('Service Worker registered!', reg))
-                    .catch(err => console.log('Service Worker failed', err));
-            });
         }
     </script>
 </body>
