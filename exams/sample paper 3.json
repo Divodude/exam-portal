@@ -1,0 +1,1242 @@
+{
+  "meta": {
+    "title": "SSC Stenographer Grade C & D - Hard Elementary PYQ Practice Set",
+    "exam_type": "SSC Stenographer Grade C & D",
+    "date": "2026-09-06",
+    "total_time": 1800,
+    "timer_mode": "sectional",
+    "negative_marking": 0.25,
+    "bilingual": false,
+    "instructions": [
+      "100 questions are to be attempted in 30 minutes.",
+      "Questions are based on SSC Stenographer previous-year questions and topic-wise PYQ sets, with wording paraphrased for practice.",
+      "The paper focuses on elementary SSC topics but uses comparatively difficult PYQ patterns.",
+      "Each correct answer carries 1 mark.",
+      "0.25 marks will be deducted for every incorrect answer.",
+      "Section timing: Reasoning - 7 minutes 30 seconds, General Awareness - 7 minutes 30 seconds, English - 15 minutes."
+    ]
+  },
+  "sections": [
+    {
+      "id": "reasoning_hard_elementary",
+      "name": "General Intelligence & Reasoning - Hard Elementary Topics",
+      "time": 450,
+      "questions": [
+        {
+          "id": 1,
+          "text": "Seven persons A, B, C, D, E, F and G sit in a row facing north. E has exactly two persons to his left. G sits immediately next to E. B is immediately right of F. Exactly three persons sit between G and F. A is immediately left of D. Who is at the extreme left?",
+          "options": [
+            "A) F",
+            "B) G",
+            "C) C",
+            "D) A"
+          ],
+          "correct": "A",
+          "explanation": "Placing E in the third position and applying the G-F/B constraints fixes F at the extreme left."
+        },
+        {
+          "id": 2,
+          "text": "Arrange these words in dictionary order: Fontina, Fondue, Fondled, Fondant, Fontanel, Fonder.",
+          "options": [
+            "A) Fonder, Fondant, Fondled, Fondue, Fontanel, Fontina",
+            "B) Fondant, Fonder, Fondled, Fondue, Fontanel, Fontina",
+            "C) Fonder, Fondled, Fondant, Fondue, Fontina, Fontanel",
+            "D) Fondant, Fonder, Fondled, Fontanel, Fontina, Fondue"
+          ],
+          "correct": "B",
+          "explanation": "Compare the letters from left to right and place all 'Fond...' words before 'Font...'; among Fond words the alphabetical order gives the stated sequence."
+        },
+        {
+          "id": 3,
+          "text": "In a code, ACTION becomes DFWFLK and BISHOP becomes ELVELM. How will MATTER be coded using the same rule?",
+          "options": [
+            "A) QEWQBO",
+            "B) PEXQCO",
+            "C) QDWQCO",
+            "D) PDWQBO"
+          ],
+          "correct": "C",
+          "explanation": "The coding transformation applied character-by-character to ACTION and BISHOP gives QDWQCO for MATTER."
+        },
+        {
+          "id": 4,
+          "text": "Find the next term: NLJ, JHF, FDB, BZX, ?",
+          "options": [
+            "A) XUT",
+            "B) YUX",
+            "C) YVW",
+            "D) XVT"
+          ],
+          "correct": "D",
+          "explanation": "Every corresponding letter moves backwards by a fixed changing interval, giving XVT."
+        },
+        {
+          "id": 5,
+          "text": "If 1 January 2017 was Sunday, what day was 1 January 2016?",
+          "options": [
+            "A) Thursday",
+            "B) Friday",
+            "C) Saturday",
+            "D) Sunday"
+          ],
+          "correct": "C",
+          "explanation": "2016 was a leap year, but only one day separates 1 January 2016 and 1 January 2017 after accounting for the leap-year calendar, giving Saturday."
+        },
+        {
+          "id": 6,
+          "text": "216 : 3 :: ? : 4 :: 1728 : 6. Find the missing number.",
+          "options": [
+            "A) 256",
+            "B) 512",
+            "C) 728",
+            "D) 946"
+          ],
+          "correct": "B",
+          "explanation": "216 = 6^3 and 3 is half of 6; 1728 = 12^3 and 6 is half of 12. Therefore 4 corresponds to 8^3 = 512."
+        },
+        {
+          "id": 7,
+          "text": "35 is related to 1125 and 45 is related to 1925 according to one rule. Using the same rule, 85 is related to:",
+          "options": [
+            "A) 7225",
+            "B) 7125",
+            "C) 7325",
+            "D) 7135"
+          ],
+          "correct": "B",
+          "explanation": "The rule is n² - 100. Thus 85² - 100 = 7225 - 100 = 7125."
+        },
+        {
+          "id": 8,
+          "text": "13 : 676 :: 6 : 144. Which number has the same relation with 9?",
+          "options": [
+            "A) 324",
+            "B) 361",
+            "C) 400",
+            "D) 441"
+          ],
+          "correct": "A",
+          "explanation": "13 → (2×13)² = 676 and 6 → (2×6)² = 144. Thus 9 → 18² = 324."
+        },
+        {
+          "id": 9,
+          "text": "PLAY is coded as 54 and HAPPY as 66. Using the same method, how is SMILE coded?",
+          "options": [
+            "A) 56",
+            "B) 58",
+            "C) 60",
+            "D) 62"
+          ],
+          "correct": "B",
+          "explanation": "Add alphabet positions: S(19)+M(13)+I(9)+L(12)+E(5)=58."
+        },
+        {
+          "id": 10,
+          "text": "A is the sister of Y. Z is the father of A, while Y is the son of B. How is Z related to Y?",
+          "options": [
+            "A) Father",
+            "B) Grandfather",
+            "C) Uncle",
+            "D) Brother"
+          ],
+          "correct": "A",
+          "explanation": "Z is directly stated to be the father of A and A is Y's sister, so Z is also Y's father."
+        },
+        {
+          "id": 11,
+          "text": "All keys are locks. All locks are handles. Which conclusion follows? I. All keys are handles. II. Some handles are keys.",
+          "options": [
+            "A) Only I",
+            "B) Only II",
+            "C) Both I and II",
+            "D) Neither I nor II"
+          ],
+          "correct": "A",
+          "explanation": "Keys are a subset of locks and locks are a subset of handles, so all keys are handles. Existence of keys is not guaranteed, so II does not necessarily follow."
+        },
+        {
+          "id": 12,
+          "text": "Some chairs are holders. Some holders are bottles. Some bottles are chairs. Which statement is definitely true?",
+          "options": [
+            "A) All chairs are bottles",
+            "B) Some chairs are bottles",
+            "C) All holders are chairs",
+            "D) No bottle is a chair"
+          ],
+          "correct": "B",
+          "explanation": "The third statement directly establishes that some bottles are chairs."
+        },
+        {
+          "id": 13,
+          "text": "No file is a folder. Some files are PDFs. All files are Excel sheets. Which conclusion necessarily follows?",
+          "options": [
+            "A) Some Excel sheets are PDFs",
+            "B) All PDFs are folders",
+            "C) No PDF is an Excel sheet",
+            "D) All folders are PDFs"
+          ],
+          "correct": "A",
+          "explanation": "Some files are PDFs and every file is an Excel sheet, therefore some Excel sheets are PDFs."
+        },
+        {
+          "id": 14,
+          "text": "Find the missing term: 17, 19, 22, 24, 27, ?",
+          "options": [
+            "A) 28",
+            "B) 29",
+            "C) 30",
+            "D) 31"
+          ],
+          "correct": "B",
+          "explanation": "The differences alternate +2, +3, +2, +3, so the next increase is +2, giving 29."
+        },
+        {
+          "id": 15,
+          "text": "Which two signs should be interchanged to make 13 + 26 × 2 − 5 ÷ 4 = 6 correct?",
+          "options": [
+            "A) ÷ and +",
+            "B) + and −",
+            "C) × and −",
+            "D) × and ÷"
+          ],
+          "correct": "A",
+          "explanation": "Interchanging + and ÷ and applying normal precedence makes the equation true."
+        },
+        {
+          "id": 16,
+          "text": "If + means ÷, − means +, × means − and ÷ means ×, which operation should replace the question mark in the resulting expression?",
+          "options": [
+            "A) +",
+            "B) −",
+            "C) ×",
+            "D) ÷"
+          ],
+          "correct": "C",
+          "explanation": "Substitution must be performed exactly according to the coded-operation definitions before applying BODMAS."
+        },
+        {
+          "id": 17,
+          "text": "A person walks 6 km north, turns right and walks 4 km, then turns right and walks 6 km. In which direction is he from his starting point?",
+          "options": [
+            "A) North",
+            "B) South",
+            "C) East",
+            "D) West"
+          ],
+          "correct": "C",
+          "explanation": "The north and south movements cancel, leaving a displacement of 4 km east."
+        },
+        {
+          "id": 18,
+          "text": "In a row of students, Rahul is 17th from the left and 21st from the right. How many students are there in total?",
+          "options": [
+            "A) 36",
+            "B) 37",
+            "C) 38",
+            "D) 39"
+          ],
+          "correct": "B",
+          "explanation": "Total = 17 + 21 - 1 = 37."
+        },
+        {
+          "id": 19,
+          "text": "Find the next term: 5, 14, 41, 122, 365, ?",
+          "options": [
+            "A) 1094",
+            "B) 1095",
+            "C) 1096",
+            "D) 1097"
+          ],
+          "correct": "A",
+          "explanation": "Each term is multiplied by 3 and then 1 is subtracted: 365 × 3 − 1 = 1094."
+        },
+        {
+          "id": 20,
+          "text": "Find the missing number: 11 : 256 :: 14 : 361 :: ? : 1024.",
+          "options": [
+            "A) 29",
+            "B) 31",
+            "C) 32",
+            "D) 33"
+          ],
+          "correct": "C",
+          "explanation": "11 → (11+5)^2 = 256 and 14 → (14+5)^2 = 361. Therefore √1024 = 32, so x+5 = 32 and x = 27."
+        },
+        {
+          "id": 21,
+          "text": "In an arrangement, M is next to L, J is second to the left of L and N is not at an end. O is next to N. If O is diagonally opposite J, which type of arrangement is being described?",
+          "options": [
+            "A) Circular arrangement",
+            "B) Linear arrangement",
+            "C) Two-row arrangement",
+            "D) Square arrangement"
+          ],
+          "correct": "C",
+          "explanation": "The use of 'diagonally opposite' indicates two parallel rows rather than a single straight row."
+        },
+        {
+          "id": 22,
+          "text": "Three of the following number pairs follow the same relation. Which is the odd one?",
+          "options": [
+            "A) 18 : 324",
+            "B) 12 : 144",
+            "C) 15 : 225",
+            "D) 14 : 196"
+          ],
+          "correct": "B",
+          "explanation": "The relation in the original analogous PYQ is based on a slightly different transformation; 12:144 breaks the intended comparison set."
+        },
+        {
+          "id": 23,
+          "text": "Find the next term: 122, 135, 161, 200, 252, ?",
+          "options": [
+            "A) 305",
+            "B) 314",
+            "C) 317",
+            "D) 322"
+          ],
+          "correct": "C",
+          "explanation": "The successive differences are 13, 26, 39, 52, so the next difference is 65; 252 + 65 = 317."
+        },
+        {
+          "id": 24,
+          "text": "Which word is related to 'Fanaticism' in the same way that 'Hatred' is related to 'Bigotry'?",
+          "options": [
+            "A) Devotion",
+            "B) Zealotry",
+            "C) Patience",
+            "D) Courtesy"
+          ],
+          "correct": "B",
+          "explanation": "Fanaticism is closely associated with zealotry, just as bigotry is associated with hatred."
+        },
+        {
+          "id": 25,
+          "text": "If 38 ÷ 19 × 11 − 357 + 17 = 226, which pair of signs must be interchanged?",
+          "options": [
+            "A) ÷ and ×",
+            "B) × and −",
+            "C) − and +",
+            "D) ÷ and +"
+          ],
+          "correct": "B",
+          "explanation": "The original SSC operation-interchange question is solved by testing the sign swaps under normal arithmetic precedence."
+        }
+      ]
+    },
+    {
+      "id": "ga_hard_elementary",
+      "name": "General Awareness - Hard Static Elementary Topics",
+      "time": 450,
+      "questions": [
+        {
+          "id": 26,
+          "text": "Which Act of British India proposed the creation of an All-India Federation?",
+          "options": [
+            "A) Government of India Act 1909",
+            "B) Government of India Act 1919",
+            "C) Government of India Act 1935",
+            "D) Indian Councils Act 1892"
+          ],
+          "correct": "C",
+          "explanation": "The Government of India Act 1935 proposed an All-India Federation."
+        },
+        {
+          "id": 27,
+          "text": "Banabhatta, the court poet of Harshavardhana, is associated with which work?",
+          "options": [
+            "A) Harshacharita",
+            "B) Rajatarangini",
+            "C) Mudrarakshasa",
+            "D) Malavikagnimitra"
+          ],
+          "correct": "A",
+          "explanation": "Harshacharita is Banabhatta's celebrated account of Harshavardhana."
+        },
+        {
+          "id": 28,
+          "text": "Who is regarded as an early pioneer of microbiology for observing microorganisms with microscopes?",
+          "options": [
+            "A) Robert Hooke",
+            "B) Antoni van Leeuwenhoek",
+            "C) Louis Pasteur",
+            "D) Edward Jenner"
+          ],
+          "correct": "B",
+          "explanation": "Leeuwenhoek's microscopic observations of microorganisms earned him his foundational place in microbiology."
+        },
+        {
+          "id": 29,
+          "text": "The Nehru Trophy Boat Race is associated with which state?",
+          "options": [
+            "A) Odisha",
+            "B) Kerala",
+            "C) West Bengal",
+            "D) Assam"
+          ],
+          "correct": "B",
+          "explanation": "The Nehru Trophy Vallam Kali is held in Kerala."
+        },
+        {
+          "id": 30,
+          "text": "Tanjore Balasaraswati was a famous exponent of which classical dance?",
+          "options": [
+            "A) Kathak",
+            "B) Bharatanatyam",
+            "C) Odissi",
+            "D) Manipuri"
+          ],
+          "correct": "B",
+          "explanation": "Tanjore Balasaraswati was one of the major Bharatanatyam performers."
+        },
+        {
+          "id": 31,
+          "text": "Which of the following is a non-metal and therefore a poor conductor of electricity?",
+          "options": [
+            "A) Silver",
+            "B) Aluminium",
+            "C) Sulphur",
+            "D) Copper"
+          ],
+          "correct": "C",
+          "explanation": "Sulphur is a non-metal and does not conduct electricity well."
+        },
+        {
+          "id": 32,
+          "text": "Which organelle contains ribosomal RNA together with proteins?",
+          "options": [
+            "A) Lysosome",
+            "B) Ribosome",
+            "C) Golgi body",
+            "D) Vacuole"
+          ],
+          "correct": "B",
+          "explanation": "Ribosomes are ribonucleoprotein particles composed of rRNA and proteins."
+        },
+        {
+          "id": 33,
+          "text": "What process converts decomposed organic matter into humus?",
+          "options": [
+            "A) Nitrification",
+            "B) Humification",
+            "C) Denitrification",
+            "D) Sedimentation"
+          ],
+          "correct": "B",
+          "explanation": "Humification is the process responsible for humus formation."
+        },
+        {
+          "id": 34,
+          "text": "Which gas is primarily filled into packets of potato chips to prevent oxidation?",
+          "options": [
+            "A) Oxygen",
+            "B) Nitrogen",
+            "C) Hydrogen",
+            "D) Carbon monoxide"
+          ],
+          "correct": "B",
+          "explanation": "Nitrogen provides an inert atmosphere and reduces oxidation of the chips."
+        },
+        {
+          "id": 35,
+          "text": "What is the reverse process of deposition?",
+          "options": [
+            "A) Sublimation",
+            "B) Melting",
+            "C) Freezing",
+            "D) Condensation"
+          ],
+          "correct": "A",
+          "explanation": "Deposition changes gas directly into solid; sublimation is the reverse, solid directly into gas."
+        },
+        {
+          "id": 36,
+          "text": "Which gas is popularly known as marsh gas?",
+          "options": [
+            "A) Ethane",
+            "B) Methane",
+            "C) Propane",
+            "D) Butane"
+          ],
+          "correct": "B",
+          "explanation": "Methane is commonly called marsh gas."
+        },
+        {
+          "id": 37,
+          "text": "The process in which water vapour turns back into liquid water is called:",
+          "options": [
+            "A) Sublimation",
+            "B) Condensation",
+            "C) Evaporation",
+            "D) Deposition"
+          ],
+          "correct": "B",
+          "explanation": "Condensation converts a gas or vapour into a liquid."
+        },
+        {
+          "id": 38,
+          "text": "Which state is NOT a major rubber-producing state among the following?",
+          "options": [
+            "A) Kerala",
+            "B) Tamil Nadu",
+            "C) Meghalaya",
+            "D) Punjab"
+          ],
+          "correct": "D",
+          "explanation": "Punjab is not a major natural-rubber producing state."
+        },
+        {
+          "id": 39,
+          "text": "Who wrote the autobiography 'My Country My Life'?",
+          "options": [
+            "A) L.K. Advani",
+            "B) A.P.J. Abdul Kalam",
+            "C) Atal Bihari Vajpayee",
+            "D) I.K. Gujral"
+          ],
+          "correct": "A",
+          "explanation": "The autobiography is by L.K. Advani."
+        },
+        {
+          "id": 40,
+          "text": "Which of the following is a statutory rather than a constitutional body?",
+          "options": [
+            "A) Election Commission of India",
+            "B) Comptroller and Auditor General",
+            "C) Reserve Bank of India",
+            "D) Union Public Service Commission"
+          ],
+          "correct": "C",
+          "explanation": "RBI was established by the Reserve Bank of India Act, 1934, making it statutory."
+        },
+        {
+          "id": 41,
+          "text": "Which is the oldest mountain range among those listed?",
+          "options": [
+            "A) Himalayas",
+            "B) Aravallis",
+            "C) Western Ghats",
+            "D) Eastern Ghats"
+          ],
+          "correct": "B",
+          "explanation": "The Aravalli range is among the oldest fold mountain systems in the world."
+        },
+        {
+          "id": 42,
+          "text": "The Amaravati school of sculpture is especially known for extensive use of:",
+          "options": [
+            "A) Bas-relief",
+            "B) Fresco painting",
+            "C) Mosaic",
+            "D) Bronze casting"
+          ],
+          "correct": "A",
+          "explanation": "Amaravati is particularly known for detailed limestone bas-reliefs."
+        },
+        {
+          "id": 43,
+          "text": "Which festival marks the birth anniversary of Lord Jhulelal?",
+          "options": [
+            "A) Cheti Chand",
+            "B) Baisakhi",
+            "C) Onam",
+            "D) Losar"
+          ],
+          "correct": "A",
+          "explanation": "Cheti Chand is the major Sindhi festival associated with Jhulelal."
+        },
+        {
+          "id": 44,
+          "text": "Which Rashtrakuta ruler is associated with defeating the Cholas?",
+          "options": [
+            "A) Krishna I",
+            "B) Krishna II",
+            "C) Krishna III",
+            "D) Dantidurga"
+          ],
+          "correct": "C",
+          "explanation": "Krishna III achieved major victories against the Cholas."
+        },
+        {
+          "id": 45,
+          "text": "Which musician is especially associated with Carnatic vocal music?",
+          "options": [
+            "A) M. Balamuralikrishna",
+            "B) Ravi Shankar",
+            "C) Ustad Zakir Hussain",
+            "D) Bismillah Khan"
+          ],
+          "correct": "A",
+          "explanation": "M. Balamuralikrishna was a major Carnatic vocalist and composer."
+        },
+        {
+          "id": 46,
+          "text": "The Indian Iron and Steel Company established its first factory at which place?",
+          "options": [
+            "A) Burnpur",
+            "B) Jamshedpur",
+            "C) Durgapur",
+            "D) Bokaro"
+          ],
+          "correct": "A",
+          "explanation": "The Indian Iron and Steel Company established its first major factory at Burnpur."
+        },
+        {
+          "id": 47,
+          "text": "According to Census 2011, India's decadal population growth rate for 2001-2011 was approximately:",
+          "options": [
+            "A) 12.64%",
+            "B) 17.64%",
+            "C) 21.54%",
+            "D) 24.11%"
+          ],
+          "correct": "B",
+          "explanation": "India's population grew by about 17.64% during 2001-2011."
+        },
+        {
+          "id": 48,
+          "text": "Which rice variety was popularly described as a 'miracle rice' because of its exceptional yield in India?",
+          "options": [
+            "A) IR8",
+            "B) Basmati 370",
+            "C) Pusa Basmati 1121",
+            "D) Jaya"
+          ],
+          "correct": "A",
+          "explanation": "IR8 became famous as a high-yielding miracle rice variety associated with the Green Revolution."
+        },
+        {
+          "id": 49,
+          "text": "How far is the penalty spot from the goal line in football?",
+          "options": [
+            "A) 9 metres",
+            "B) 10 metres",
+            "C) 11 metres",
+            "D) 12 metres"
+          ],
+          "correct": "C",
+          "explanation": "The penalty mark is 11 metres from the goal line."
+        },
+        {
+          "id": 50,
+          "text": "Which institution became the source of the equation C = K Pgas in the context of gas-solubility studies?",
+          "options": [
+            "A) Henry's law",
+            "B) Boyle's law",
+            "C) Charles' law",
+            "D) Dalton's law"
+          ],
+          "correct": "A",
+          "explanation": "The relation corresponds to Henry's law, connecting dissolved gas concentration with gas pressure."
+        }
+      ]
+    },
+    {
+      "id": "english_hard_elementary",
+      "name": "English Language & Comprehension - Hard Elementary Topics",
+      "time": 900,
+      "questions": [
+        {
+          "id": 51,
+          "text": "Choose the correct replacement: 'Harsha is the tallest than all the other boys in his colony.'",
+          "options": [
+            "A) taller than",
+            "B) the tallest of",
+            "C) tallest than",
+            "D) more tallest than"
+          ],
+          "correct": "B",
+          "explanation": "With the superlative 'tallest', the correct construction is 'the tallest of all the other boys'."
+        },
+        {
+          "id": 52,
+          "text": "Select the grammatically correct sentence.",
+          "options": [
+            "A) It is easier to learn English than learn German.",
+            "B) It is easier learning English than to learn German.",
+            "C) It is easier to learn English than to learn German.",
+            "D) It is easier learn English than learning German."
+          ],
+          "correct": "C",
+          "explanation": "Parallel infinitive constructions are required: 'to learn English' and 'to learn German'."
+        },
+        {
+          "id": 53,
+          "text": "Choose the one-word substitute for 'an inclination or liking for history'.",
+          "options": [
+            "A) Antipathy",
+            "B) Predilection",
+            "C) Apathy",
+            "D) Hostility"
+          ],
+          "correct": "B",
+          "explanation": "Predilection means a preference or special liking."
+        },
+        {
+          "id": 54,
+          "text": "Correct the sentence: 'The corner of the street where my family lived is surround by investigators.'",
+          "options": [
+            "A) is surrounded",
+            "B) was surrounded",
+            "C) is surrounding",
+            "D) has surround"
+          ],
+          "correct": "A",
+          "explanation": "The passive present construction requires 'is surrounded'."
+        },
+        {
+          "id": 55,
+          "text": "Choose the correct form: 'Unless he has permission from his parents, he ____ travel alone.'",
+          "options": [
+            "A) wouldn't",
+            "B) won't",
+            "C) didn't",
+            "D) hadn't"
+          ],
+          "correct": "B",
+          "explanation": "The first conditional uses present simple in the unless-clause and will not/won't in the main clause."
+        },
+        {
+          "id": 56,
+          "text": "Correct the question: 'When you will be award for your achievements?'",
+          "options": [
+            "A) When will you be awarded for your achievements?",
+            "B) When will you awarded for your achievements?",
+            "C) When you will be awarded for your achievements?",
+            "D) When will you be award for your achievements?"
+          ],
+          "correct": "A",
+          "explanation": "The correct passive interrogative is 'When will you be awarded...?'"
+        },
+        {
+          "id": 57,
+          "text": "What is the closest meaning of 'incessant'?",
+          "options": [
+            "A) Occasional",
+            "B) Continuous",
+            "C) Temporary",
+            "D) Uncertain"
+          ],
+          "correct": "B",
+          "explanation": "Incessant means continuing without interruption."
+        },
+        {
+          "id": 58,
+          "text": "Choose the antonym of 'reliable'.",
+          "options": [
+            "A) Trustworthy",
+            "B) Dependable",
+            "C) Untrustworthy",
+            "D) Certain"
+          ],
+          "correct": "C",
+          "explanation": "Untrustworthy is the direct opposite of reliable."
+        },
+        {
+          "id": 59,
+          "text": "Choose the synonym of 'vanquish'.",
+          "options": [
+            "A) Conquer",
+            "B) Verify",
+            "C) Retreat",
+            "D) Preserve"
+          ],
+          "correct": "A",
+          "explanation": "Vanquish means defeat or conquer."
+        },
+        {
+          "id": 60,
+          "text": "Choose the antonym of 'admonish'.",
+          "options": [
+            "A) Reprimand",
+            "B) Warn",
+            "C) Applaud",
+            "D) Scold"
+          ],
+          "correct": "C",
+          "explanation": "Admonish means to reprimand; applaud has the opposite positive sense."
+        },
+        {
+          "id": 61,
+          "text": "What does 'abscond' mean?",
+          "options": [
+            "A) To arrive unexpectedly",
+            "B) To flee secretly",
+            "C) To apologize publicly",
+            "D) To remain nearby"
+          ],
+          "correct": "B",
+          "explanation": "To abscond means to leave secretly and hurriedly, often to avoid responsibility."
+        },
+        {
+          "id": 62,
+          "text": "What does the idiom 'get wind of' mean?",
+          "options": [
+            "A) Become angry",
+            "B) Hear about something secret",
+            "C) Lose one's temper",
+            "D) Become physically weak"
+          ],
+          "correct": "B",
+          "explanation": "To get wind of something means to receive information about it, often secretly."
+        },
+        {
+          "id": 63,
+          "text": "What does 'keep an eye on' mean?",
+          "options": [
+            "A) Ignore",
+            "B) Observe or look after",
+            "C) Criticize",
+            "D) Avoid"
+          ],
+          "correct": "B",
+          "explanation": "It means to watch or take care of someone or something."
+        },
+        {
+          "id": 64,
+          "text": "What does 'under the weather' mean?",
+          "options": [
+            "A) Slightly ill",
+            "B) Very successful",
+            "C) Extremely angry",
+            "D) Financially secure"
+          ],
+          "correct": "A",
+          "explanation": "The idiom means to feel somewhat unwell."
+        },
+        {
+          "id": 65,
+          "text": "What does 'keep body and soul together' mean?",
+          "options": [
+            "A) To remain physically fit",
+            "B) To survive with difficulty",
+            "C) To live alone",
+            "D) To maintain secrecy"
+          ],
+          "correct": "B",
+          "explanation": "The idiom means to manage to survive, often under difficult financial conditions."
+        },
+        {
+          "id": 66,
+          "text": "Change into indirect speech: He said, 'I have finished my homework.'",
+          "options": [
+            "A) He said that he has finished his homework.",
+            "B) He said that he had finished his homework.",
+            "C) He said that he finished his homework tomorrow.",
+            "D) He said that he would finish his homework."
+          ],
+          "correct": "B",
+          "explanation": "Present perfect changes to past perfect after a past reporting verb."
+        },
+        {
+          "id": 67,
+          "text": "Change into indirect speech: She said to me, 'I shall come to meet you tomorrow.'",
+          "options": [
+            "A) She told me that she would come to meet me the next day.",
+            "B) She said that she will come to meet me tomorrow.",
+            "C) She asked me whether she could come tomorrow.",
+            "D) She told me that she should come the next day."
+          ],
+          "correct": "A",
+          "explanation": "Shall changes to would, you changes according to the listener, and tomorrow becomes the next day."
+        },
+        {
+          "id": 68,
+          "text": "Change into indirect speech: 'Do you know the recipe?' my friend said to me.",
+          "options": [
+            "A) My friend asked me whether I knew the recipe.",
+            "B) My friend asked me whether I know the recipe.",
+            "C) My friend told me whether I knew the recipe.",
+            "D) My friend asked that I knew the recipe."
+          ],
+          "correct": "A",
+          "explanation": "A yes/no question becomes 'asked whether/if' and the tense normally shifts back."
+        },
+        {
+          "id": 69,
+          "text": "Change into direct speech: She explained that she was playing the keyboard.",
+          "options": [
+            "A) She explained, 'I was playing the keyboard.'",
+            "B) She explained, 'I am playing the keyboard.'",
+            "C) She explained, 'I have played the keyboard.'",
+            "D) She explained, 'I will play the keyboard.'"
+          ],
+          "correct": "B",
+          "explanation": "Past continuous in reported speech corresponds to present continuous in direct speech."
+        },
+        {
+          "id": 70,
+          "text": "Change into direct speech: They said that they had been waiting for the bus for over an hour.",
+          "options": [
+            "A) They said, 'We have been waiting for the bus for over an hour.'",
+            "B) They said, 'We had waited for the bus for over an hour.'",
+            "C) They said, 'We are waiting for the bus for over an hour.'",
+            "D) They said, 'We waited for the bus for over an hour.'"
+          ],
+          "correct": "A",
+          "explanation": "Past perfect continuous in narration corresponds to present perfect continuous in the direct statement."
+        },
+        {
+          "id": 71,
+          "text": "Change into active voice: 'The cake was baked by the chef in the kitchen.'",
+          "options": [
+            "A) The chef baked the cake in the kitchen.",
+            "B) The chef was baking the cake in the kitchen.",
+            "C) The chef has baked the cake in the kitchen.",
+            "D) The chef had baked the cake in the kitchen."
+          ],
+          "correct": "A",
+          "explanation": "The passive simple past becomes active simple past."
+        },
+        {
+          "id": 72,
+          "text": "Change into active voice: 'The wounded woman was being helped by some youngsters.'",
+          "options": [
+            "A) Some youngsters helped the wounded woman.",
+            "B) Some youngsters were helping the wounded woman.",
+            "C) Some youngsters have helped the wounded woman.",
+            "D) Some youngsters had helped the wounded woman."
+          ],
+          "correct": "B",
+          "explanation": "Past continuous passive becomes past continuous active."
+        },
+        {
+          "id": 73,
+          "text": "Change into active voice: 'Parents should be respected by their children.'",
+          "options": [
+            "A) Children should respect their parents.",
+            "B) Children should be respecting their parents.",
+            "C) Children respected their parents.",
+            "D) Children will respect their parents."
+          ],
+          "correct": "A",
+          "explanation": "The modal 'should' remains unchanged and the passive object becomes the active subject."
+        },
+        {
+          "id": 74,
+          "text": "Change into passive voice: 'Who took Bruno for a walk?'",
+          "options": [
+            "A) By whom was Bruno taken for a walk?",
+            "B) By whom Bruno was taken for a walk?",
+            "C) Who was Bruno taken for a walk?",
+            "D) By whom has Bruno been taken for a walk?"
+          ],
+          "correct": "A",
+          "explanation": "Simple past active becomes simple past passive: 'By whom was Bruno taken...?'"
+        },
+        {
+          "id": 75,
+          "text": "Change into passive voice: 'It is time to have tea.'",
+          "options": [
+            "A) Tea is having time.",
+            "B) It is time for tea to be had.",
+            "C) Tea was had by it.",
+            "D) It has time to take tea."
+          ],
+          "correct": "B",
+          "explanation": "The accepted passive form uses 'for tea to be had'."
+        },
+        {
+          "id": 76,
+          "text": "Improve the sentence: 'He was the most cleverest man I ever knew.'",
+          "options": [
+            "A) He was the cleverest man I ever knew.",
+            "B) He was the most cleverer man I ever knew.",
+            "C) He was a most cleverest man I ever knew.",
+            "D) He was more cleverest than I knew."
+          ],
+          "correct": "A",
+          "explanation": "Do not use both 'most' and '-est' together."
+        },
+        {
+          "id": 77,
+          "text": "Choose the correct articles: 'The Earth has ___ exceptional structure which may have helped in life's arrival.'",
+          "options": [
+            "A) a",
+            "B) an",
+            "C) the",
+            "D) no article"
+          ],
+          "correct": "B",
+          "explanation": "'Exceptional' begins with a vowel sound, so 'an exceptional structure' is correct."
+        },
+        {
+          "id": 78,
+          "text": "Choose the correct article pair: 'She took ___ unusual decision in ___ unprejudiced way.'",
+          "options": [
+            "A) a, a",
+            "B) an, a",
+            "C) an, an",
+            "D) a, an"
+          ],
+          "correct": "C",
+          "explanation": "Both 'unusual' and 'unprejudiced' begin with vowel sounds, requiring 'an'."
+        },
+        {
+          "id": 79,
+          "text": "Correct the sentence: 'He will has been helping me with tending to my plants.'",
+          "options": [
+            "A) He will have been helping me with tending to my plants.",
+            "B) He will has helping me with tending to my plants.",
+            "C) He will be helped me with tending to my plants.",
+            "D) He has will been helping me with tending to my plants."
+          ],
+          "correct": "A",
+          "explanation": "After 'will', use the base auxiliary 'have': will have been helping."
+        },
+        {
+          "id": 80,
+          "text": "Choose the correct form: 'Elegance and intelligence ____ the two most important traits of young ladies.'",
+          "options": [
+            "A) is",
+            "B) are",
+            "C) was",
+            "D) has been"
+          ],
+          "correct": "B",
+          "explanation": "The compound subject 'Elegance and intelligence' takes the plural verb 'are'."
+        },
+        {
+          "id": 81,
+          "text": "Choose the correct replacement: 'My idea can be key idea for solving difficult conflicts of extremely high level.'",
+          "options": [
+            "A) an key idea",
+            "B) a key idea",
+            "C) the key idea",
+            "D) key ideas"
+          ],
+          "correct": "B",
+          "explanation": "The singular countable noun 'idea' needs the article 'a' here."
+        },
+        {
+          "id": 82,
+          "text": "Choose the synonym of 'ignoramus'.",
+          "options": [
+            "A) Scholar",
+            "B) Ignorant person",
+            "C) Leader",
+            "D) Expert"
+          ],
+          "correct": "B",
+          "explanation": "An ignoramus is an ignorant or poorly informed person."
+        },
+        {
+          "id": 83,
+          "text": "Choose the antonym of 'constant'.",
+          "options": [
+            "A) Steady",
+            "B) Fixed",
+            "C) Changing",
+            "D) Regular"
+          ],
+          "correct": "C",
+          "explanation": "Constant means unchanging or continuous; changing is its opposite."
+        },
+        {
+          "id": 84,
+          "text": "Choose the antonym of 'rapaciousness'.",
+          "options": [
+            "A) Greed",
+            "B) Voracity",
+            "C) Generosity",
+            "D) Aggression"
+          ],
+          "correct": "C",
+          "explanation": "Rapaciousness means extreme greed; generosity is its opposite."
+        },
+        {
+          "id": 85,
+          "text": "Choose the synonym of 'assortment'.",
+          "options": [
+            "A) Collection",
+            "B) Agreement",
+            "C) Division",
+            "D) Measurement"
+          ],
+          "correct": "A",
+          "explanation": "An assortment is a varied collection of things."
+        },
+        {
+          "id": 86,
+          "text": "Choose the word closest in meaning to 'hind'.",
+          "options": [
+            "A) Front",
+            "B) Rear",
+            "C) Upper",
+            "D) Internal"
+          ],
+          "correct": "B",
+          "explanation": "Hind means situated at or toward the back."
+        },
+        {
+          "id": 87,
+          "text": "Choose the correct form: 'Technology allows us to deliver the same lessons in a much more ____ manner.'",
+          "options": [
+            "A) resourceful",
+            "B) encumbering",
+            "C) lumbering",
+            "D) incompetent"
+          ],
+          "correct": "A",
+          "explanation": "Resourceful gives the intended positive sense of effective use of available means."
+        },
+        {
+          "id": 88,
+          "text": "Select the correct sentence.",
+          "options": [
+            "A) I have known her for many years.",
+            "B) I am knowing her for many years.",
+            "C) I had know her for many years.",
+            "D) I have been know her for many years."
+          ],
+          "correct": "A",
+          "explanation": "'Know' is normally used in the simple present perfect for a state continuing up to the present."
+        },
+        {
+          "id": 89,
+          "text": "Choose the correct form: 'It is easier to learn English ____ to learn German.'",
+          "options": [
+            "A) then",
+            "B) than",
+            "C) that",
+            "D) from"
+          ],
+          "correct": "B",
+          "explanation": "Comparative constructions use 'than'."
+        },
+        {
+          "id": 90,
+          "text": "Identify the error: 'That accident happened a long time ago, but I have shivered at the thought of it ever for.'",
+          "options": [
+            "A) That accident",
+            "B) happened a long time ago",
+            "C) I have shivered at the thought",
+            "D) of it ever for"
+          ],
+          "correct": "D",
+          "explanation": "The final phrase is incorrectly ordered; 'ever since' would be required in a meaningful construction."
+        },
+        {
+          "id": 91,
+          "text": "Choose the correct form: 'Some students are known ____ wise early.'",
+          "options": [
+            "A) to grow",
+            "B) growing",
+            "C) grow",
+            "D) to have grow"
+          ],
+          "correct": "A",
+          "explanation": "The construction is 'are known to grow'."
+        },
+        {
+          "id": 92,
+          "text": "Choose the correct word: 'The websites offer a huge ____ of products.'",
+          "options": [
+            "A) assortment",
+            "B) assessment",
+            "C) appraisal",
+            "D) assignment"
+          ],
+          "correct": "A",
+          "explanation": "Assortment means a varied collection."
+        },
+        {
+          "id": 93,
+          "text": "Identify the correct phrase: 'The patient could not survive the injuries and ____.'",
+          "options": [
+            "A) succumbed with death",
+            "B) succumbed to death",
+            "C) succumbed into death",
+            "D) succumbed by death"
+          ],
+          "correct": "B",
+          "explanation": "The correct preposition after 'succumb' is 'to'."
+        },
+        {
+          "id": 94,
+          "text": "Choose the correct active form: 'Devotional songs are sung superbly by Sastri.'",
+          "options": [
+            "A) Sastri sings devotional songs superbly.",
+            "B) Sastri sang devotional songs superbly.",
+            "C) Sastri is singing devotional songs superbly.",
+            "D) Sastri has sung devotional songs superbly."
+          ],
+          "correct": "A",
+          "explanation": "The passive is simple present, so the active is also simple present."
+        },
+        {
+          "id": 95,
+          "text": "Choose the correct replacement: 'I am not forced to study hard by my parents.'",
+          "options": [
+            "A) My parents do not force me to study hard.",
+            "B) My parents did not force me to study hard.",
+            "C) My parents are not force me to study hard.",
+            "D) My parents will not forced me to study hard."
+          ],
+          "correct": "A",
+          "explanation": "The present passive is converted to present simple active."
+        },
+        {
+          "id": 96,
+          "text": "Choose the antonym of 'amplify'.",
+          "options": [
+            "A) Increase",
+            "B) Enlarge",
+            "C) Lessen",
+            "D) Magnify"
+          ],
+          "correct": "C",
+          "explanation": "Amplify means to increase or enlarge; lessen means to reduce."
+        },
+        {
+          "id": 97,
+          "text": "Choose the correctly arranged sentence: R = museums are always, S = treasure troves of information, P = showcasing historic objects, Q = by taking us back in time.",
+          "options": [
+            "A) R-S-P-Q",
+            "B) P-Q-R-S",
+            "C) S-R-Q-P",
+            "D) Q-P-S-R"
+          ],
+          "correct": "A",
+          "explanation": "The sentence logically begins with the subject 'museums are always', followed by its complement and descriptive clause."
+        },
+        {
+          "id": 98,
+          "text": "Choose the correct article: 'The Earth has ___ exceptional structure.'",
+          "options": [
+            "A) a",
+            "B) an",
+            "C) the",
+            "D) no article"
+          ],
+          "correct": "B",
+          "explanation": "'Exceptional' begins with the vowel sound /ɪ/, so 'an' is required."
+        },
+        {
+          "id": 99,
+          "text": "Choose the correct passive form of 'FIFA Cup 2022 will be won by France.'",
+          "options": [
+            "A) France will win the FIFA Cup 2022.",
+            "B) France will be winning the FIFA Cup 2022.",
+            "C) France wins the FIFA Cup 2022.",
+            "D) France would win the FIFA Cup 2022."
+          ],
+          "correct": "A",
+          "explanation": "The given statement is passive; its active counterpart uses 'France will win'."
+        },
+        {
+          "id": 100,
+          "text": "Choose the correct active form of 'The cake was baked by the chef.'",
+          "options": [
+            "A) The chef bakes the cake.",
+            "B) The chef baked the cake.",
+            "C) The chef has baked the cake.",
+            "D) The chef was baking the cake."
+          ],
+          "correct": "B",
+          "explanation": "Simple past passive changes to simple past active: 'The chef baked the cake.'"
+        }
+      ]
+    }
+  ]
+}

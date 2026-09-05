@@ -1,0 +1,1242 @@
+{
+  "meta": {
+    "title": "SSC Stenographer PYQ-Based 30 Minute Practice Paper",
+    "exam_type": "SSC Stenographer Grade C & D",
+    "date": "2026-09-06",
+    "total_time": 1800,
+    "timer_mode": "sectional",
+    "negative_marking": 0.25,
+    "bilingual": false,
+    "instructions": [
+      "This paper contains 100 questions and is designed for a 30-minute practice attempt.",
+      "Questions are based on verified SSC Stenographer previous-year questions, with wording paraphrased for practice.",
+      "Each correct answer carries 1 mark.",
+      "0.25 marks will be deducted for every incorrect answer.",
+      "Unattempted questions carry no negative marking.",
+      "Section timings: General Intelligence & Reasoning 7 minutes 30 seconds, General Awareness 7 minutes 30 seconds, English Language & Comprehension 15 minutes."
+    ]
+  },
+  "sections": [
+    {
+      "id": "reasoning_1",
+      "name": "General Intelligence & Reasoning - Series, Analogy, Coding, Syllogism and Logic",
+      "time": 450,
+      "questions": [
+        {
+          "id": 1,
+          "text": "In a coded expression, L means division, N means multiplication, P means addition and J means subtraction. Which pair of symbols must be interchanged so that 19 L 95 N 5 J 35 P 7 becomes 333?",
+          "options": [
+            "A) P and L",
+            "B) J and N",
+            "C) P and N",
+            "D) N and L"
+          ],
+          "correct": "D",
+          "explanation": "Interchanging N and L changes the expression to 19 × 95 ÷ 5 − 35 + 7 = 333."
+        },
+        {
+          "id": 2,
+          "text": "Five equally spaced houses are arranged so that B is east of A, D is south of B, C is west of D and E is south of C. What is the direction of A with respect to E?",
+          "options": [
+            "A) North-East",
+            "B) North",
+            "C) West",
+            "D) South-West"
+          ],
+          "correct": "B",
+          "explanation": "Following the positions, E lies directly south of A, so A is north of E."
+        },
+        {
+          "id": 3,
+          "text": "A is the mother of C, C has a daughter E, and A is married to F. F has a son B, whose son is D. What is D's relation to E?",
+          "options": [
+            "A) Mother",
+            "B) Sister",
+            "C) Cousin",
+            "D) Daughter"
+          ],
+          "correct": "C",
+          "explanation": "B and C are treated as siblings through the married couple, making their children D and E cousins."
+        },
+        {
+          "id": 4,
+          "text": "Six people A, B, C, X, Y and Z sit around a circular table facing the centre. X is immediately left of A, one person sits between X and Z, C is second right of B, and Y is not next to A. Who sits immediately right of Z?",
+          "options": [
+            "A) Y",
+            "B) B",
+            "C) C",
+            "D) A"
+          ],
+          "correct": "B",
+          "explanation": "Applying all the circular seating conditions fixes B immediately to the right of Z."
+        },
+        {
+          "id": 5,
+          "text": "Some teachers are dancers. All dancers are beautiful. All teachers are honest. Which conclusions follow? I: Some teachers are beautiful. II: Some dancers are honest.",
+          "options": [
+            "A) Only I",
+            "B) Both I and II",
+            "C) Neither I nor II",
+            "D) Only II"
+          ],
+          "correct": "B",
+          "explanation": "The teachers who are dancers are beautiful and, because they are teachers, they are also honest."
+        },
+        {
+          "id": 6,
+          "text": "Six friends sit around a circular table. Rohini is third left of Rashmi. Rahul sits between Rashmi and Ramesh. Ravi sits between Rohini and Raju and is second right of Rashmi. Who is immediately left of Raju?",
+          "options": [
+            "A) Rahul",
+            "B) Rohini",
+            "C) Ramesh",
+            "D) Rashmi"
+          ],
+          "correct": "D",
+          "explanation": "The seating arrangement obtained from all four conditions places Rashmi immediately to Raju's left."
+        },
+        {
+          "id": 7,
+          "text": "Identify the odd letter group among the following: SHQP, FUHC, WDYT, JQLG.",
+          "options": [
+            "A) SHQP",
+            "B) FUHC",
+            "C) WDYT",
+            "D) JQLG"
+          ],
+          "correct": "A",
+          "explanation": "The first group follows a different alphabetic relationship from the other three groups."
+        },
+        {
+          "id": 8,
+          "text": "In a code, BOOK is represented by 172 and PAGES by 240. Which value represents LIBRARY?",
+          "options": [
+            "A) 680",
+            "B) 595",
+            "C) 469",
+            "D) 510"
+          ],
+          "correct": "B",
+          "explanation": "The coding relationship used in the original PYQ gives 595 for LIBRARY."
+        },
+        {
+          "id": 9,
+          "text": "Find the next term: 7 + 5 ÷ 3 − 12 × 4, when × means ÷, ÷ means −, − means + and + means ×.",
+          "options": [
+            "A) 30",
+            "B) 6",
+            "C) 35",
+            "D) 28"
+          ],
+          "correct": "C",
+          "explanation": "After replacing the symbols, the expression becomes 7 × 5 − 3 + 12 ÷ 4 = 35."
+        },
+        {
+          "id": 10,
+          "text": "In 5 + 3 × 2 ÷ 10 − 5, interchange + with × and − with ÷. What is the resulting value?",
+          "options": [
+            "A) 13",
+            "B) 12",
+            "C) 10",
+            "D) 15"
+          ],
+          "correct": "D",
+          "explanation": "The transformed expression is 5 × 3 + 2 − 10 ÷ 5 = 15."
+        },
+        {
+          "id": 11,
+          "text": "Seven people have different ages. Two are older than M, two are younger than K, K is a multiple of 10, the youngest is 12, F is oldest, and N is older than L but younger than H. The youngest and second-oldest ages total 42. Which can be L's age?",
+          "options": [
+            "A) 15 years",
+            "B) 12 years",
+            "C) 10 years",
+            "D) 21 years"
+          ],
+          "correct": "A",
+          "explanation": "The age constraints permit 15 years as the valid age for L."
+        },
+        {
+          "id": 12,
+          "text": "X is the sister of Y. Z is the father of A, and Y is the son of A. How is Z related to X?",
+          "options": [
+            "A) Father",
+            "B) Grandfather",
+            "C) Great-grandfather",
+            "D) Granddaughter"
+          ],
+          "correct": "B",
+          "explanation": "Z is Y's grandfather and X is Y's sister, so Z is also X's grandfather."
+        },
+        {
+          "id": 13,
+          "text": "Given M > N ≥ O ≤ P ≤ W and X ≥ O > Y, which conclusion is definitely true? I: M > X. II: Y < W.",
+          "options": [
+            "A) Neither",
+            "B) Both",
+            "C) Only II",
+            "D) Only I"
+          ],
+          "correct": "C",
+          "explanation": "Y is below O and W is at least O, so Y < W. M > X cannot be established."
+        },
+        {
+          "id": 14,
+          "text": "Find the missing term in the series: 12, 16, 25, 50, 99, ?, 389.",
+          "options": [
+            "A) 220",
+            "B) 180",
+            "C) 200",
+            "D) 240"
+          ],
+          "correct": "A",
+          "explanation": "The sequence follows the established difference pattern and gives 220 as the missing term."
+        },
+        {
+          "id": 15,
+          "text": "Find the missing number in: 23, 54, 81, 117, 137, 182, 191, ?",
+          "options": [
+            "A) 245",
+            "B) 294",
+            "C) 254",
+            "D) 249"
+          ],
+          "correct": "D",
+          "explanation": "The alternating increment pattern leads to 249."
+        },
+        {
+          "id": 16,
+          "text": "If 16 corresponds to 85 and 28 corresponds to 145 under the same rule, what corresponds to 23?",
+          "options": [
+            "A) 105",
+            "B) 150",
+            "C) 120",
+            "D) 135"
+          ],
+          "correct": "C",
+          "explanation": "The relation is 5n + 5, so for 23 the result is 120."
+        },
+        {
+          "id": 17,
+          "text": "Complete the series: 5, 14, 41, 122, 365, ?",
+          "options": [
+            "A) 1490",
+            "B) 1049",
+            "C) 1940",
+            "D) 1094"
+          ],
+          "correct": "D",
+          "explanation": "Each term is obtained by multiplying by 3 and subtracting 1, so the next term is 1094."
+        },
+        {
+          "id": 18,
+          "text": "Which two signs and two numbers should be interchanged to make 2 − 55 + 11 × 4 ÷ 18 equal to zero?",
+          "options": [
+            "A) − and ÷; 2 and 4",
+            "B) × and −; 4 and 11",
+            "C) + and ÷; 11 and 18",
+            "D) + and ÷; 2 and 18"
+          ],
+          "correct": "D",
+          "explanation": "After the indicated interchanges the expression becomes 18 − 55 ÷ 11 × 4 + 2 = 0."
+        },
+        {
+          "id": 19,
+          "text": "Find the next number: 122, 135, 161, 200, 252, ?",
+          "options": [
+            "A) 217",
+            "B) 317",
+            "C) 417",
+            "D) 517"
+          ],
+          "correct": "B",
+          "explanation": "The successive differences increase regularly, making the next term 317."
+        },
+        {
+          "id": 20,
+          "text": "What day of the week was 14 September 3041?",
+          "options": [
+            "A) Friday",
+            "B) Monday",
+            "C) Sunday",
+            "D) Tuesday"
+          ],
+          "correct": "D",
+          "explanation": "Calendar calculation gives Tuesday for 14 September 3041."
+        },
+        {
+          "id": 21,
+          "text": "After reaching a roundabout, Suresh takes the second left and travels 1 km, then turns right for 3 km and left for 2 km. How far does he travel after the second-left turn?",
+          "options": [
+            "A) 12 km",
+            "B) 8 km",
+            "C) 5 km",
+            "D) 6 km"
+          ],
+          "correct": "D",
+          "explanation": "After the second-left turn he travels 1 + 3 + 2 = 6 km."
+        },
+        {
+          "id": 22,
+          "text": "Which option has the same relationship as (2, 7, 11) and (13, 17, 29)?",
+          "options": [
+            "A) (27, 31, 33)",
+            "B) (3, 9, 11)",
+            "C) (37, 41, 49)",
+            "D) (13, 17, 23)"
+          ],
+          "correct": "D",
+          "explanation": "The numerical relationship among the three values matches the fourth option."
+        },
+        {
+          "id": 23,
+          "text": "Complete the letter series WGDE, ZEGC, ?, FAMY, IYPW.",
+          "options": [
+            "A) DCIB",
+            "B) DBJC",
+            "C) CCJA",
+            "D) ZCIB"
+          ],
+          "correct": "C",
+          "explanation": "Applying the alphabetic position pattern produces CCJA."
+        },
+        {
+          "id": 24,
+          "text": "Which triad is analogous to 505, 604, 217?",
+          "options": [
+            "A) 432, 513, 711",
+            "B) 161, 512, 710",
+            "C) 125, 223, 342",
+            "D) 244, 226, 262"
+          ],
+          "correct": "D",
+          "explanation": "The numerical operation connecting the three values is preserved in option D."
+        },
+        {
+          "id": 25,
+          "text": "Some fathers are females, all fathers are males, and some fathers are mothers. Which conclusion follows? I: Some males are not females. II: Some mothers are females. III: Some males are mothers.",
+          "options": [
+            "A) II and III",
+            "B) I and III",
+            "C) I, II and III",
+            "D) Only III"
+          ],
+          "correct": "D",
+          "explanation": "From 'some fathers are mothers' and all fathers being males, some males are mothers. The other conclusions do not necessarily follow."
+        }
+      ]
+    },
+    {
+      "id": "general_awareness_1",
+      "name": "General Awareness - History, Polity, Geography, Science, Economy, Art & Culture",
+      "time": 450,
+      "questions": [
+        {
+          "id": 26,
+          "text": "Who wrote the book 'Not Only The Things That Have Happened'?",
+          "options": [
+            "A) Sushmita Banerjee",
+            "B) Rashmi Bansal",
+            "C) Arshia Sattar",
+            "D) Mridula Koshy"
+          ],
+          "correct": "A",
+          "explanation": "The book is credited to Sushmita Banerjee."
+        },
+        {
+          "id": 27,
+          "text": "Who became the 28th Controller General of Accounts in March 2023?",
+          "options": [
+            "A) Girraj Prasad Gupta",
+            "B) S.S. Dubey",
+            "C) Sanjay Kumar",
+            "D) V.K. Sharma"
+          ],
+          "correct": "B",
+          "explanation": "S.S. Dubey took charge as the 28th CGA."
+        },
+        {
+          "id": 28,
+          "text": "Which state won the Women's U-18 Hockey title in the Khelo India Youth Games 2022?",
+          "options": [
+            "A) Madhya Pradesh",
+            "B) Jharkhand",
+            "C) Haryana",
+            "D) Odisha"
+          ],
+          "correct": "C",
+          "explanation": "Haryana won the Women's U-18 hockey title."
+        },
+        {
+          "id": 29,
+          "text": "Banabhatta, the court poet of Harshavardhana, wrote which work?",
+          "options": [
+            "A) Arthashastra",
+            "B) Harshacharita",
+            "C) Mudrarakshasa",
+            "D) Nitisara"
+          ],
+          "correct": "B",
+          "explanation": "Harshacharita is Banabhatta's famous biography of Harshavardhana."
+        },
+        {
+          "id": 30,
+          "text": "Which cell organelle contains RNA as an important component?",
+          "options": [
+            "A) Cell base",
+            "B) Cell wall",
+            "C) Ribosome",
+            "D) Cytoplasm"
+          ],
+          "correct": "C",
+          "explanation": "Ribosomes contain ribosomal RNA and proteins."
+        },
+        {
+          "id": 31,
+          "text": "The walls of the Amaravati Stupa are especially associated with which type of relief sculpture?",
+          "options": [
+            "A) Alto-relievo",
+            "B) Freestanding",
+            "C) Bas-relief",
+            "D) Sunken relief"
+          ],
+          "correct": "C",
+          "explanation": "Amaravati sculptures prominently use bas-relief work."
+        },
+        {
+          "id": 32,
+          "text": "The Nehru Trophy Boat Race is held in which state?",
+          "options": [
+            "A) Kerala",
+            "B) Maharashtra",
+            "C) Andhra Pradesh",
+            "D) Goa"
+          ],
+          "correct": "A",
+          "explanation": "The famous Nehru Trophy Vallam Kali is held in Kerala."
+        },
+        {
+          "id": 33,
+          "text": "Tanjore Balasaraswati was famous for which classical dance form?",
+          "options": [
+            "A) Mohiniyattam",
+            "B) Kuchipudi",
+            "C) Kathak",
+            "D) Bharatanatyam"
+          ],
+          "correct": "D",
+          "explanation": "Tanjore Balasaraswati was a celebrated Bharatanatyam exponent."
+        },
+        {
+          "id": 34,
+          "text": "Which of these states is associated with relatively low rainfall in India?",
+          "options": [
+            "A) Tripura",
+            "B) Bihar",
+            "C) Meghalaya",
+            "D) Gujarat"
+          ],
+          "correct": "D",
+          "explanation": "Gujarat has areas receiving comparatively low rainfall."
+        },
+        {
+          "id": 35,
+          "text": "Bade Ghulam Ali Khan belonged to which musical gharana?",
+          "options": [
+            "A) Gwalior",
+            "B) Agra",
+            "C) Kirana",
+            "D) Patiala"
+          ],
+          "correct": "D",
+          "explanation": "Bade Ghulam Ali Khan is identified with the Patiala gharana."
+        },
+        {
+          "id": 36,
+          "text": "Tropical cyclones affecting India mainly originate over which combination?",
+          "options": [
+            "A) Mediterranean, Pacific and Indian Oceans",
+            "B) Bay of Bengal, Arabian Sea and Indian Ocean",
+            "C) Mediterranean, Arabian Sea and Indian Ocean",
+            "D) Bay of Bengal, Arabian Sea and Atlantic Ocean"
+          ],
+          "correct": "B",
+          "explanation": "For Indian conditions, the Bay of Bengal, Arabian Sea and wider Indian Ocean region are major cyclone-generating areas."
+        },
+        {
+          "id": 37,
+          "text": "Which one is NOT a constitutional body?",
+          "options": [
+            "A) Election Commission of India",
+            "B) National Commission for Backward Classes",
+            "C) Comptroller and Auditor General of India",
+            "D) Reserve Bank of India"
+          ],
+          "correct": "D",
+          "explanation": "RBI is created by statute, while the other three have constitutional status."
+        },
+        {
+          "id": 38,
+          "text": "Rubber is not a major cultivation in which state among these?",
+          "options": [
+            "A) Tamil Nadu",
+            "B) Kerala",
+            "C) Meghalaya",
+            "D) Punjab"
+          ],
+          "correct": "D",
+          "explanation": "Punjab is not a major rubber-producing state."
+        },
+        {
+          "id": 39,
+          "text": "Who wrote the autobiography 'My Country My Life'?",
+          "options": [
+            "A) I.K. Gujral",
+            "B) L.K. Advani",
+            "C) Kapil Sibal",
+            "D) Natwar Singh"
+          ],
+          "correct": "B",
+          "explanation": "The autobiography was written by L.K. Advani."
+        },
+        {
+          "id": 40,
+          "text": "In which year was the GST (Compensation to States) Bill passed?",
+          "options": [
+            "A) 2007",
+            "B) 2014",
+            "C) 2017",
+            "D) 2002"
+          ],
+          "correct": "C",
+          "explanation": "The GST Compensation legislation was enacted in 2017."
+        },
+        {
+          "id": 41,
+          "text": "Which British Indian Act proposed the idea of an All-India Federation?",
+          "options": [
+            "A) Government of India Act, 1935",
+            "B) Government of India Act, 1919",
+            "C) Government of India Act, 1853",
+            "D) Government of India Act, 1858"
+          ],
+          "correct": "A",
+          "explanation": "The Government of India Act 1935 proposed an All-India Federation."
+        },
+        {
+          "id": 42,
+          "text": "The Aravalli is best described as what?",
+          "options": [
+            "A) Plateau",
+            "B) Mountain range",
+            "C) Lake",
+            "D) Valley"
+          ],
+          "correct": "B",
+          "explanation": "The Aravalli is an ancient mountain range."
+        },
+        {
+          "id": 43,
+          "text": "Which pair represents satellite ports?",
+          "options": [
+            "A) Paradip and Visakhapatnam",
+            "B) Nhava Sheva and Haldia",
+            "C) Mormugao and New Mangalore",
+            "D) Chennai and Mumbai"
+          ],
+          "correct": "B",
+          "explanation": "Nhava Sheva and Haldia are identified as satellite ports in the cited PYQ."
+        },
+        {
+          "id": 44,
+          "text": "Which is NOT a good conductor of electricity?",
+          "options": [
+            "A) Gold",
+            "B) Aluminium",
+            "C) Sulphur",
+            "D) Silver"
+          ],
+          "correct": "C",
+          "explanation": "Sulphur is a non-metal and a poor conductor of electricity."
+        },
+        {
+          "id": 45,
+          "text": "Which Rashtrakuta ruler defeated the Cholas?",
+          "options": [
+            "A) Krishna I",
+            "B) Krishna III",
+            "C) Rajendra",
+            "D) Rajaraja I"
+          ],
+          "correct": "B",
+          "explanation": "Krishna III of the Rashtrakuta dynasty defeated the Cholas in the relevant historical context."
+        },
+        {
+          "id": 46,
+          "text": "Who among the following is a Carnatic music vocalist?",
+          "options": [
+            "A) Ravi Shankar",
+            "B) L. Subramaniam",
+            "C) Alla Rakha",
+            "D) M. Balamuralikrishna"
+          ],
+          "correct": "D",
+          "explanation": "M. Balamuralikrishna was a renowned Carnatic vocalist and composer."
+        },
+        {
+          "id": 47,
+          "text": "The birth anniversary of Lord Jhulelal is celebrated by Sindhis as which festival?",
+          "options": [
+            "A) Cheti Chand",
+            "B) Jamshedi Navroz",
+            "C) Chaliho Sahib",
+            "D) Ulambana"
+          ],
+          "correct": "A",
+          "explanation": "Cheti Chand marks the birth anniversary of Jhulelal."
+        },
+        {
+          "id": 48,
+          "text": "Who became Himachal Pradesh Chief Minister in December 2022?",
+          "options": [
+            "A) Pratibha Singh",
+            "B) Jai Ram Thakur",
+            "C) Sukhvinder Singh Sukhu",
+            "D) Mukesh Agnihotri"
+          ],
+          "correct": "C",
+          "explanation": "Sukhvinder Singh Sukhu became Chief Minister in December 2022."
+        },
+        {
+          "id": 49,
+          "text": "Who is regarded as the founding father of microbiology after using a homemade microscope to observe microbes?",
+          "options": [
+            "A) Antoni van Leeuwenhoek",
+            "B) Matthias Schleiden",
+            "C) Rudolf Virchow",
+            "D) Robert Brown"
+          ],
+          "correct": "A",
+          "explanation": "Antoni van Leeuwenhoek pioneered microscopic observations of microorganisms."
+        },
+        {
+          "id": 50,
+          "text": "Which process occurs during decomposition in soil and contributes to humus formation?",
+          "options": [
+            "A) Defragmentation",
+            "B) Humification",
+            "C) Oxidation",
+            "D) Crystallisation"
+          ],
+          "correct": "B",
+          "explanation": "Humification converts decomposed organic matter into humus."
+        }
+      ]
+    },
+    {
+      "id": "english_1",
+      "name": "English Language & Comprehension - Grammar, Vocabulary, Idioms, Voice, Narration and Para Jumbles",
+      "time": 900,
+      "questions": [
+        {
+          "id": 51,
+          "text": "Identify the segment containing the error: 'It became a known fact that they most played techno music at every party.'",
+          "options": [
+            "A) at",
+            "B) that",
+            "C) most",
+            "D) every"
+          ],
+          "correct": "C",
+          "explanation": "The adverb should be 'mostly', not 'most', in this construction."
+        },
+        {
+          "id": 52,
+          "text": "Change into indirect speech: He said, 'I have finished my homework.'",
+          "options": [
+            "A) He said that he would finish his homework.",
+            "B) He said that he had finished his homework.",
+            "C) He said that he had to finish his homework.",
+            "D) He said that he has finished his homework."
+          ],
+          "correct": "B",
+          "explanation": "Present perfect changes to past perfect in reported speech."
+        },
+        {
+          "id": 53,
+          "text": "Fill in the blank: 'They could not reach the railway station before the train ____.'",
+          "options": [
+            "A) left",
+            "B) has been leaving",
+            "C) has leave",
+            "D) leave"
+          ],
+          "correct": "A",
+          "explanation": "Simple past 'left' correctly describes the earlier completed action."
+        },
+        {
+          "id": 54,
+          "text": "What does the idiom 'to get wind of' mean?",
+          "options": [
+            "A) To get into difficulty",
+            "B) To hear secret information",
+            "C) To recover from something",
+            "D) To escape payment"
+          ],
+          "correct": "B",
+          "explanation": "To get wind of something means to learn about information that was not intended to be public."
+        },
+        {
+          "id": 55,
+          "text": "Change into direct speech: She said that she could bake cookies.",
+          "options": [
+            "A) She said, 'I may bake cookies.'",
+            "B) She had said, 'I can bake cookies.'",
+            "C) She said, 'I can bake cookies.'",
+            "D) She says, 'I can bake cookies.'"
+          ],
+          "correct": "C",
+          "explanation": "The corresponding direct statement uses 'can' for the original ability."
+        },
+        {
+          "id": 56,
+          "text": "Choose the word that correctly completes: 'You have different websites which have a huge ____ of products.'",
+          "options": [
+            "A) appraisal",
+            "B) assessment",
+            "C) assortment",
+            "D) assignment"
+          ],
+          "correct": "C",
+          "explanation": "Assortment means a varied collection of items."
+        },
+        {
+          "id": 57,
+          "text": "Choose the correct sequence for the given paragraph about fine art and applied arts.",
+          "options": [
+            "A) SUPQRT",
+            "B) SRPUTQ",
+            "C) RPSTUQ",
+            "D) SURPTQ"
+          ],
+          "correct": "D",
+          "explanation": "The sequence beginning with the general classification of art and then moving through definitions gives the coherent paragraph."
+        },
+        {
+          "id": 58,
+          "text": "Choose the synonym of 'Hind'.",
+          "options": [
+            "A) Fore",
+            "B) Rear",
+            "C) Anterior",
+            "D) Ventral"
+          ],
+          "correct": "B",
+          "explanation": "Hind means situated at the back or rear."
+        },
+        {
+          "id": 59,
+          "text": "Change into direct speech: She said she was seeing her brother the following day.",
+          "options": [
+            "A) She said, 'I should see my brother tomorrow.'",
+            "B) She said, 'I am seeing my brother tomorrow.'",
+            "C) She said, 'I was seeing my brother tomorrow.'",
+            "D) She says, 'I will see my brother tomorrow.'"
+          ],
+          "correct": "B",
+          "explanation": "The reported form corresponds to the present continuous statement with 'tomorrow'."
+        },
+        {
+          "id": 60,
+          "text": "Arrange the sentence parts beginning with 'Men usually make more decisions' into the correct order.",
+          "options": [
+            "A) BADC",
+            "B) DCAB",
+            "C) ACDB",
+            "D) ACBD"
+          ],
+          "correct": "D",
+          "explanation": "The sequence R-A-C-B-D produces a grammatically coherent statement."
+        },
+        {
+          "id": 61,
+          "text": "Choose the antonym of 'constant' in the sentence where fear is described as a constant companion.",
+          "options": [
+            "A) Boring",
+            "B) Friendly",
+            "C) Steady",
+            "D) Changing"
+          ],
+          "correct": "D",
+          "explanation": "Changing is the opposite of constant."
+        },
+        {
+          "id": 62,
+          "text": "Change into active voice: 'Some students are known to grow wise early.'",
+          "options": [
+            "A) Some students have been knowing they grow wise early.",
+            "B) We all know students grew wise early.",
+            "C) People know that some students grow wise early.",
+            "D) Few of us know that students grow early."
+          ],
+          "correct": "C",
+          "explanation": "The passive construction is correctly changed to 'People know that...'."
+        },
+        {
+          "id": 63,
+          "text": "Which idiom best completes the sentence: rising prices have made it difficult to ____?",
+          "options": [
+            "A) cost an arm and a leg",
+            "B) be a blessing in disguise",
+            "C) keep body and soul together",
+            "D) break a leg"
+          ],
+          "correct": "C",
+          "explanation": "Keep body and soul together means to survive, especially with financial difficulty."
+        },
+        {
+          "id": 64,
+          "text": "Choose the synonym of 'Ignoramus'.",
+          "options": [
+            "A) Playful",
+            "B) Cautious",
+            "C) Stupid",
+            "D) Deceitful"
+          ],
+          "correct": "C",
+          "explanation": "An ignoramus is an ignorant or uninformed person."
+        },
+        {
+          "id": 65,
+          "text": "Change into active voice: 'The cake was baked by the chef in the kitchen.'",
+          "options": [
+            "A) The kitchen was baking the cake by the chef.",
+            "B) The cake is being baked by the chef.",
+            "C) The cake was being baked by the chef.",
+            "D) The chef baked the cake in the kitchen."
+          ],
+          "correct": "D",
+          "explanation": "The active subject is 'the chef' and the tense remains simple past."
+        },
+        {
+          "id": 66,
+          "text": "Change into reported speech: Raju said to Reghu, 'Stay back.'",
+          "options": [
+            "A) Raju had ordered Reghu to stay back.",
+            "B) Raju has ordered Reghu to stay back.",
+            "C) Raju ordered Reghu to stay back.",
+            "D) Raju orders Reghu to stay back."
+          ],
+          "correct": "C",
+          "explanation": "A simple past reporting verb with an infinitive correctly reports the command."
+        },
+        {
+          "id": 67,
+          "text": "Choose the antonym of 'amateur'.",
+          "options": [
+            "A) Perfect",
+            "B) Assistant",
+            "C) Professional",
+            "D) Chef"
+          ],
+          "correct": "C",
+          "explanation": "An amateur is opposite to a professional."
+        },
+        {
+          "id": 68,
+          "text": "Change into active voice: 'The FIFA Cup 2022 will be won by France.'",
+          "options": [
+            "A) France will win the FIFA Cup 2022.",
+            "B) France will be winning the FIFA Cup 2022.",
+            "C) France wins the FIFA Cup 2022.",
+            "D) France would win the FIFA Cup 2022."
+          ],
+          "correct": "A",
+          "explanation": "Future passive changes to simple future active as 'France will win'."
+        },
+        {
+          "id": 69,
+          "text": "Change into passive voice: 'Who took Bruno for a walk?'",
+          "options": [
+            "A) By whom has Bruno been taken for a walk?",
+            "B) By whom will Bruno be taken for a walk?",
+            "C) With whom is Bruno taken for a walk?",
+            "D) By whom was Bruno taken for a walk?"
+          ],
+          "correct": "D",
+          "explanation": "The past-tense active question becomes 'By whom was Bruno taken...?'"
+        },
+        {
+          "id": 70,
+          "text": "Arrange the parts to form a meaningful sentence about museums: P showcasing historic objects, Q by taking us back in time, R museums are always, S treasure troves of information.",
+          "options": [
+            "A) Q-S-P-R",
+            "B) R-S-P-Q",
+            "C) S-P-R-Q",
+            "D) P-Q-S-R"
+          ],
+          "correct": "B",
+          "explanation": "R-S-P-Q forms the grammatically complete sentence."
+        },
+        {
+          "id": 71,
+          "text": "Identify the incorrect segment: 'That accident happened a long time ago, but I have shivered at the thought of it ever for.'",
+          "options": [
+            "A) D",
+            "B) A",
+            "C) B",
+            "D) C"
+          ],
+          "correct": "A",
+          "explanation": "The final segment has incorrect word order and use of 'ever for'."
+        },
+        {
+          "id": 72,
+          "text": "Choose the antonym of 'Admonish'.",
+          "options": [
+            "A) Abide",
+            "B) Applaud",
+            "C) Accede",
+            "D) Abetment"
+          ],
+          "correct": "B",
+          "explanation": "Admonish means to scold or reprimand; applaud is an opposite idea."
+        },
+        {
+          "id": 73,
+          "text": "Choose the synonym of 'Vanquish'.",
+          "options": [
+            "A) Verify",
+            "B) Describe",
+            "C) Quantify",
+            "D) Conquer"
+          ],
+          "correct": "D",
+          "explanation": "Vanquish means to defeat or conquer."
+        },
+        {
+          "id": 74,
+          "text": "Choose the grammatically correct correction: 'My idea can be key idea for cracking difficult conflicts of extremely high level.'",
+          "options": [
+            "A) an key ... an extremely",
+            "B) a key ... a extremely",
+            "C) a key ... an extremely",
+            "D) key idea ... an extremely"
+          ],
+          "correct": "C",
+          "explanation": "The correct articles are 'a key idea' and 'an extremely high level'."
+        },
+        {
+          "id": 75,
+          "text": "Identify the erroneous part: 'He will has been helping me with tending to my plants.'",
+          "options": [
+            "A) to my plants",
+            "B) with tending",
+            "C) helping me",
+            "D) He will has been"
+          ],
+          "correct": "D",
+          "explanation": "After 'will', the auxiliary construction should be 'will have been'."
+        },
+        {
+          "id": 76,
+          "text": "Arrange the parts about the Artemis mission: P the south pole of the Moon, Q and where no man has ever been before, R the Artemis mission will explore, S where ice has been confirmed.",
+          "options": [
+            "A) P-R-Q-S",
+            "B) R-P-S-Q",
+            "C) S-R-Q-P",
+            "D) Q-P-S-R"
+          ],
+          "correct": "B",
+          "explanation": "R-P-S-Q creates the coherent sentence."
+        },
+        {
+          "id": 77,
+          "text": "Choose the corrected version of: 'PIEZO2 plays an critical role ... to regulate a important physiological process ...'.",
+          "options": [
+            "A) PIEZO2 plays critical role ... a important...",
+            "B) PIEZO2 plays an critical role ... the important...",
+            "C) PIEZO2 plays the critical role ... the important...",
+            "D) PIEZO2 plays a critical role ... an important..."
+          ],
+          "correct": "D",
+          "explanation": "The correct articles are 'a critical role' and 'an important physiological process'."
+        },
+        {
+          "id": 78,
+          "text": "Improve the sentence: 'He was the most cleverest man I ever knew.'",
+          "options": [
+            "A) cleverer",
+            "B) cleverest",
+            "C) most cleverer",
+            "D) more clever"
+          ],
+          "correct": "B",
+          "explanation": "Using both 'most' and the superlative '-est' is redundant; 'cleverest' is correct."
+        },
+        {
+          "id": 79,
+          "text": "What does 'absconded' mean in 'The patient absconded from the hospital at dawn'?",
+          "options": [
+            "A) Collected payment acknowledgement",
+            "B) Learned to communicate",
+            "C) Faced lack of cooperation",
+            "D) Fled away hurriedly and secretly"
+          ],
+          "correct": "D",
+          "explanation": "Abscond means to leave suddenly and secretly, usually to avoid something."
+        },
+        {
+          "id": 80,
+          "text": "Change into active voice: 'The wounded woman was being helped by some youngsters.'",
+          "options": [
+            "A) Some youngsters were helping the wounded woman.",
+            "B) Some youngsters have helped the wounded woman.",
+            "C) Some youngsters helped the wounded woman.",
+            "D) The woman found help."
+          ],
+          "correct": "A",
+          "explanation": "The past continuous passive becomes past continuous active."
+        },
+        {
+          "id": 81,
+          "text": "Choose the passive form of 'It is time to have tea.'",
+          "options": [
+            "A) Time must be taken to prepare tea.",
+            "B) It is time for tea to be had.",
+            "C) Tea is to be had.",
+            "D) Tea is to be taken by it."
+          ],
+          "correct": "B",
+          "explanation": "The original PYQ's accepted passive construction is 'It is time for tea to be had.'"
+        },
+        {
+          "id": 82,
+          "text": "Choose the antonym of 'Reliable'.",
+          "options": [
+            "A) Unknown",
+            "B) Untrustworthy",
+            "C) Unfamiliar",
+            "D) Uncommon"
+          ],
+          "correct": "B",
+          "explanation": "Untrustworthy is the direct opposite of reliable."
+        },
+        {
+          "id": 83,
+          "text": "Choose the correct replacement: 'Elegance and intelligence had the two most important traits of young ladies.'",
+          "options": [
+            "A) has been the",
+            "B) am being the",
+            "C) been the",
+            "D) are the"
+          ],
+          "correct": "D",
+          "explanation": "The plural subject requires 'are': 'Elegance and intelligence are the...'."
+        },
+        {
+          "id": 84,
+          "text": "What does the idiom 'under the weather' mean?",
+          "options": [
+            "A) Feeling angry",
+            "B) Feeling slightly ill",
+            "C) Feeling energetic",
+            "D) Feeling lazy and bored"
+          ],
+          "correct": "B",
+          "explanation": "Under the weather means feeling slightly unwell."
+        },
+        {
+          "id": 85,
+          "text": "Change into indirect speech: My friend said, 'Do you know the recipe of mango ice-cream?'",
+          "options": [
+            "A) My friend asked me if I knew the recipe.",
+            "B) My friend asked me that I know the recipe.",
+            "C) My friend asked me that I knew the recipe.",
+            "D) My friend asked me if I know the recipe."
+          ],
+          "correct": "A",
+          "explanation": "A yes/no question is reported using 'asked if' and the tense shifts to past."
+        },
+        {
+          "id": 86,
+          "text": "What does 'incessant' mean in the sentence describing continuous noise?",
+          "options": [
+            "A) Continuing without interruption",
+            "B) Following an unknown course",
+            "C) Causing a negative impact",
+            "D) Happening occasionally"
+          ],
+          "correct": "A",
+          "explanation": "Incessant means continuing without stopping."
+        },
+        {
+          "id": 87,
+          "text": "Convert into direct speech: They said that they had been waiting for the bus for over an hour.",
+          "options": [
+            "A) 'We had waited for the bus for over an hour,' they said.",
+            "B) 'We are waiting for the bus for over an hour,' they said.",
+            "C) 'We waited for the bus for over an hour,' they said.",
+            "D) 'We have been waiting for the bus for over an hour,' they said."
+          ],
+          "correct": "D",
+          "explanation": "Past perfect continuous in reported speech corresponds to present perfect continuous in the direct form."
+        },
+        {
+          "id": 88,
+          "text": "Choose the best word: 'Technology allows us to deliver the same lessons in a much more ____ manner.'",
+          "options": [
+            "A) incompetent",
+            "B) lumbering",
+            "C) encumbering",
+            "D) resourceful"
+          ],
+          "correct": "D",
+          "explanation": "Resourceful best fits the positive meaning of effective use of available means."
+        },
+        {
+          "id": 89,
+          "text": "Change into indirect speech: She said to me, 'I shall come to meet you tomorrow.'",
+          "options": [
+            "A) She told me that she will come tomorrow.",
+            "B) She asked me whether she could come.",
+            "C) She tells me that she could come tomorrow.",
+            "D) She told me that she would come the next day."
+          ],
+          "correct": "D",
+          "explanation": "Shall changes to would and tomorrow changes to the next day."
+        },
+        {
+          "id": 90,
+          "text": "Choose the antonym of 'rapaciousness' in the context of corporate contribution.",
+          "options": [
+            "A) Greed",
+            "B) Generosity",
+            "C) Violence",
+            "D) Voracity"
+          ],
+          "correct": "B",
+          "explanation": "Rapaciousness denotes greed; generosity is the opposite."
+        },
+        {
+          "id": 91,
+          "text": "Correct the sentence: 'The earth has a exceptional structure which may have helped in life's arrival.'",
+          "options": [
+            "A) An earth has exceptional structure...",
+            "B) An earth has an exceptional structure...",
+            "C) The earth has an exceptional structure...",
+            "D) A earth has exceptional structure..."
+          ],
+          "correct": "C",
+          "explanation": "The correct construction is 'The earth has an exceptional structure'."
+        },
+        {
+          "id": 92,
+          "text": "Change into indirect speech: 'I am playing the keyboard,' she explained.",
+          "options": [
+            "A) She explained that she is playing the keyboard.",
+            "B) She said that she had been playing the keyboard.",
+            "C) She said that she is playing the keyboard.",
+            "D) She explained that she was playing the keyboard."
+          ],
+          "correct": "D",
+          "explanation": "The present continuous changes to past continuous after a past reporting verb."
+        },
+        {
+          "id": 93,
+          "text": "Select the grammatically correct sentence among the given versions involving 'troll', 'boy' and 'social media'.",
+          "options": [
+            "A) The troll, the boy shared on social media created a big laughter.",
+            "B) A troll, a boy shared in on social media created an big laughter.",
+            "C) An troll, the boy shared on the social media created the big laughter.",
+            "D) The troll, a boy shared on an social media created a big laughter."
+          ],
+          "correct": "A",
+          "explanation": "Among the given options, A is the accepted correct alternative in the PYQ."
+        },
+        {
+          "id": 94,
+          "text": "Replace the incorrect phrase: 'The patient couldn't survive the injuries and succumbed with death.'",
+          "options": [
+            "A) succumbed by death",
+            "B) succumbed in death",
+            "C) succumbed to death",
+            "D) succumbed into death"
+          ],
+          "correct": "C",
+          "explanation": "The correct collocation is 'succumbed to death'."
+        },
+        {
+          "id": 95,
+          "text": "Change into active voice: 'Devotional songs are sung superbly by Sastri.'",
+          "options": [
+            "A) Sastri sings devotional songs superbly.",
+            "B) Sastri is singing devotional songs superbly.",
+            "C) Sastri has superbly sung devotional songs.",
+            "D) Sastri has been singing devotional songs superbly."
+          ],
+          "correct": "A",
+          "explanation": "Simple present passive changes to simple present active."
+        },
+        {
+          "id": 96,
+          "text": "Choose the antonym of 'Amplify'.",
+          "options": [
+            "A) Dislike",
+            "B) Lessen",
+            "C) Enrich",
+            "D) Exaggerate"
+          ],
+          "correct": "B",
+          "explanation": "Amplify means increase or enlarge; lessen means reduce."
+        },
+        {
+          "id": 97,
+          "text": "Choose the corrected sentence: 'I have known her for many years. This time, she took unusual decision in unprejudiced way.'",
+          "options": [
+            "A) She took a unusual decision in an unprejudiced way.",
+            "B) She took unusual decision in an unprejudiced way.",
+            "C) She took an unusual decision in a unprejudiced way.",
+            "D) She took an unusual decision in an unprejudiced way."
+          ],
+          "correct": "D",
+          "explanation": "The correct articles are 'an unusual decision' and 'an unprejudiced way'."
+        },
+        {
+          "id": 98,
+          "text": "What does the idiom 'keep an eye on' mean?",
+          "options": [
+            "A) Ignore something",
+            "B) Look after someone or something",
+            "C) Wait for something disturbing",
+            "D) Accomplish something ambitious"
+          ],
+          "correct": "B",
+          "explanation": "Keep an eye on means watch or look after someone or something."
+        },
+        {
+          "id": 99,
+          "text": "Change into active voice: 'I am not forced to study hard by my parents.'",
+          "options": [
+            "A) My parents did not force me to study hard.",
+            "B) My parents are not forcing me to study hard.",
+            "C) My parents do not force me to study hard.",
+            "D) My parents will not force me to study hard."
+          ],
+          "correct": "C",
+          "explanation": "The passive present construction changes to present simple active: 'My parents do not force me...'."
+        },
+        {
+          "id": 100,
+          "text": "Change into active voice: 'Parents should be respected by their children.'",
+          "options": [
+            "A) Children should be respecting their parents.",
+            "B) Children are to respect their parents.",
+            "C) Children should respect their parents.",
+            "D) Children shall be respecting their parents."
+          ],
+          "correct": "C",
+          "explanation": "The modal 'should' remains unchanged in the active voice: 'Children should respect their parents.'"
+        }
+      ]
+    }
+  ]
+}

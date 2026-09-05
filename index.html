@@ -4,107 +4,291 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SSC Mock Exam Platform</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
             --ssc-blue: #007bff;
+            --ssc-blue-hover: #0069d9;
             --ssc-dark: #343a40;
-            --not-visited: #e9ecef;
-            --not-answered: #dc3545;
-            --answered: #28a745;
-            --marked: #6f42c1;
-            --answered-marked: #6f42c1;
-            --bg-color: #f4f6f9;
+            --ssc-dark-hover: #23272b;
+            --not-visited: #f1f5f9;
+            --not-answered: #ef4444;
+            --answered: #10b981;
+            --marked: #8b5cf6;
+            --answered-marked: #8b5cf6;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --border-color: #e2e8f0;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --input-bg: #ffffff;
+            --option-hover-bg: #f0f7ff;
+            --timer-bg: #fee2e2;
+            --score-bg: #f0f7ff;
+            --score-border: #e0f2fe;
+            --correct-bg: #f0fdf4;
+            --wrong-bg: #fef2f2;
+            --shadow-light: rgba(0,0,0,0.04);
+            --shadow-medium: rgba(0,0,0,0.03);
+            --overlay-bg: rgba(15, 23, 42, 0.4);
+        }
+
+        [data-theme="dark"] {
+            --ssc-blue: #3b82f6;
+            --ssc-blue-hover: #2563eb;
+            --ssc-dark: #475569;
+            --ssc-dark-hover: #334155;
+            --not-visited: #1e293b;
+            --not-answered: #ef4444;
+            --answered: #10b981;
+            --marked: #8b5cf6;
+            --answered-marked: #8b5cf6;
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --border-color: #334155;
+            --text-main: #f1f5f9;
+            --text-muted: #94a3b8;
+            --input-bg: #0f172a;
+            --option-hover-bg: #1e3a5f;
+            --timer-bg: #451a1a;
+            --score-bg: #172554;
+            --score-border: #1e3a5f;
+            --correct-bg: #052e16;
+            --wrong-bg: #450a0a;
+            --shadow-light: rgba(0,0,0,0.3);
+            --shadow-medium: rgba(0,0,0,0.4);
+            --overlay-bg: rgba(0, 0, 0, 0.6);
         }
 
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Inter', sans-serif;
             margin: 0;
             padding: 0;
             background-color: var(--bg-color);
-            color: #333;
+            color: var(--text-main);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
         }
 
         /* --- Views --- */
         .view { display: none; height: 100vh; flex-direction: column; }
-        .view.active { display: flex; }
+        .view.active { display: flex; animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1); }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+        /* --- Global Components --- */
+        .btn { 
+            padding: 12px 24px; border: none; border-radius: 8px; cursor: pointer; font-size: 15px; font-weight: 500; font-family: 'Inter', sans-serif; transition: all 0.2s ease;
+        }
+        .btn:hover { transform: translateY(-1px); box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+        .btn:active { transform: translateY(0); }
+        .btn-primary { background: var(--ssc-blue); color: #fff; }
+        .btn-primary:hover { background: var(--ssc-blue-hover); }
+        .btn-secondary { background: var(--ssc-dark); color: #fff; }
+        .btn-secondary:hover { background: var(--ssc-dark-hover); }
+        .btn-success { background: var(--answered); color: #fff; }
+        .btn-success:hover { background: #059669; }
+        .btn-warning { background: #f59e0b; color: #fff; }
+        .btn-warning:hover { background: #d97706; }
+
+        input[type="text"], select, input[type="file"] {
+            padding: 14px 16px; border-radius: 8px; border: 1px solid var(--border-color); font-family: 'Inter', sans-serif; font-size: 15px; width: 100%; box-sizing: border-box; transition: all 0.2s ease;
+            outline: none; background: var(--input-bg); color: var(--text-main);
+        }
+        input[type="text"]:focus, select:focus { border-color: var(--ssc-blue); box-shadow: 0 0 0 3px rgba(0,123,255,0.15); }
 
         /* --- Home View --- */
-        #home-view { justify-content: center; align-items: center; text-align: center; background: #fff;}
-        .home-card { padding: 40px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 400px; }
-        .home-card h1 { color: var(--ssc-blue); }
-        .btn { padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; margin-top: 10px; color: #fff;}
-        .btn-primary { background: var(--ssc-blue); }
-        .btn-secondary { background: var(--ssc-dark); }
-        .btn-success { background: var(--answered); }
-        .file-upload { margin: 20px 0; }
+        #home-view { justify-content: center; align-items: center; }
+        .home-card { padding: 40px; border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.04), 0 1px 3px rgba(0,0,0,0.02); width: 440px; max-width: 90%; background: var(--card-bg); text-align: center; }
+        .home-card h1 { color: var(--text-main); margin-top: 0; font-size: 28px; font-weight: 700; letter-spacing: -0.5px; }
+        #exams-list button { margin-bottom: 12px; width: 100%; text-align: left; padding: 16px 20px; font-weight: 500; background: var(--card-bg); color: var(--text-main); border: 1px solid var(--border-color); border-radius: 12px; cursor: pointer; transition: all 0.2s; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 15px; box-shadow: 0 2px 4px var(--shadow-light);}
+        #exams-list button:hover { border-color: var(--ssc-blue); box-shadow: 0 4px 12px rgba(0,123,255,0.15); color: var(--ssc-blue); transform: translateY(-2px); }
 
         /* --- Exam View --- */
-        header { background: var(--ssc-blue); color: #fff; padding: 10px 20px; display: flex; justify-content: space-between; align-items: center; }
-        .timer-box { font-size: 20px; font-weight: bold; background: #fff; color: red; padding: 5px 15px; border-radius: 5px; }
+        header { background: var(--card-bg); color: var(--text-main); padding: 15px 30px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-color); box-shadow: 0 4px 20px rgba(0,0,0,0.02); z-index: 10; }
+        #exam-title { font-size: 20px; font-weight: 600; letter-spacing: -0.3px;}
+        .timer-box { font-size: 18px; font-weight: 700; background: var(--timer-bg); color: var(--not-answered); padding: 8px 16px; border-radius: 8px; display: flex; align-items: center; gap: 8px; letter-spacing: 1px; }
 
-        .exam-container { display: flex; flex: 1; overflow: hidden; }
-        .main-content { flex: 1; display: flex; flex-direction: column; overflow-y: auto; padding: 20px; }
-        .sidebar { width: 300px; background: #fff; border-left: 1px solid #ddd; display: flex; flex-direction: column; }
+        .exam-container { display: flex; flex: 1; overflow: hidden; background: var(--bg-color); padding: 20px; gap: 20px; }
+        .main-content { flex: 1; display: flex; flex-direction: column; overflow-y: auto; padding: 40px; background: var(--card-bg); border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.03), 0 1px 3px rgba(0,0,0,0.02); }
+        .sidebar { width: 340px; background: var(--card-bg); border-radius: 20px; display: flex; flex-direction: column; box-shadow: 0 10px 30px rgba(0,0,0,0.03), 0 1px 3px rgba(0,0,0,0.02); overflow: hidden; border: 1px solid var(--border-color); }
 
-        .section-tabs { display: flex; border-bottom: 1px solid #ddd; margin-bottom: 20px; }
-        .tab { padding: 10px 15px; cursor: pointer; border: 1px solid transparent; border-bottom: none; }
-        .tab.active { background: #fff; border-color: #ddd; font-weight: bold; border-top: 3px solid var(--ssc-blue); }
-        .tab.locked { color: #999; cursor: not-allowed; }
+        .section-tabs { display: flex; border-bottom: 2px solid var(--not-visited); margin-bottom: 40px; gap: 30px; }
+        .tab { padding: 10px 0; cursor: pointer; border-bottom: 2px solid transparent; color: var(--text-muted); font-weight: 500; margin-bottom: -2px; transition: all 0.2s; font-size: 15px;}
+        .tab:hover { color: var(--text-main); }
+        .tab.active { color: var(--ssc-blue); border-bottom-color: var(--ssc-blue); font-weight: 600; }
+        .tab.locked { color: #cbd5e1; cursor: not-allowed; }
 
-        .question-area { flex: 1; font-size: 18px; }
-        .options { margin-top: 20px; }
-        .option { display: block; margin-bottom: 10px; cursor: pointer; padding: 10px; border: 1px solid #ccc; border-radius: 5px; }
-        .option:hover { background: #f0f0f0; }
-        input[type="radio"] { margin-right: 10px; }
-
-        .action-bar { display: flex; gap: 10px; margin-top: 20px; border-top: 1px solid #ddd; padding-top: 20px; }
+        .question-area { flex: 1; color: var(--text-main); }
+        #q-number { font-size: 13px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1.5px; margin-top: 0; font-weight: 600; margin-bottom: 15px; }
+        #q-text { font-size: 19px; font-weight: 500; margin-bottom: 40px; line-height: 1.6; }
         
-        .profile-area { padding: 20px; text-align: center; border-bottom: 1px solid #ddd; }
-        .palette-stats { padding: 10px; display: grid; grid-template-columns: 1fr 1fr; gap: 5px; font-size: 12px; border-bottom: 1px solid #ddd; }
-        .stat-item { display: flex; align-items: center; gap: 5px; }
-        .status-box { width: 15px; height: 15px; border-radius: 3px; display: inline-block; color:white; text-align:center; line-height:15px; font-size:10px; }
+        .options { margin-top: 20px; display: flex; flex-direction: column; gap: 12px; }
+        .option { display: flex; align-items: center; padding: 16px 20px; cursor: pointer; border: 1px solid var(--border-color); border-radius: 12px; transition: all 0.2s ease; background: var(--card-bg); font-size: 16px; color: var(--text-main);}
+        .option:hover { border-color: var(--ssc-blue); background: var(--option-hover-bg); }
+        input[type="radio"] { margin-right: 15px; width: 20px; height: 20px; accent-color: var(--ssc-blue); cursor: pointer; flex-shrink: 0; }
+
+        .action-bar { display: flex; gap: 12px; margin-top: 40px; border-top: 1px solid var(--not-visited); padding-top: 30px; }
         
-        .palette-grid { padding: 20px; display: flex; flex-wrap: wrap; gap: 10px; overflow-y: auto; }
-        .q-btn { width: 40px; height: 40px; border-radius: 50%; border: 1px solid #ccc; cursor: pointer; font-size: 14px; font-weight: bold; background: var(--not-visited); display: flex; align-items: center; justify-content: center;}
+        .profile-area { padding: 30px 20px; text-align: center; border-bottom: 1px solid var(--border-color); background: var(--not-visited); }
+        #cand-name-display { font-size: 18px; font-weight: 600; color: var(--text-main); }
+        .palette-stats { padding: 20px; display: grid; grid-template-columns: 1fr 1fr; gap: 15px; font-size: 13px; border-bottom: 1px solid var(--border-color); color: var(--text-muted); font-weight: 500; }
+        .stat-item { display: flex; align-items: center; gap: 10px; }
+        .status-box { width: 24px; height: 24px; border-radius: 6px; display: inline-flex; align-items: center; justify-content: center; color: #fff; font-size: 11px; font-weight: 700; flex-shrink: 0; }
         
-        .st-not-visited { background: var(--not-visited); color: #000; }
-        .st-not-answered { background: var(--not-answered); color: #fff; border-radius: 5px; }
-        .st-answered { background: var(--answered); color: #fff; border-radius: 5px 5px 0 0; }
+        .palette-grid { padding: 25px; display: flex; flex-wrap: wrap; gap: 12px; overflow-y: auto; justify-content: center; }
+        .q-btn { width: 44px; height: 44px; border-radius: 12px; border: none; cursor: pointer; font-size: 15px; font-weight: 600; background: var(--not-visited); display: flex; align-items: center; justify-content: center; color: var(--text-muted); transition: all 0.2s ease; box-shadow: 0 2px 5px rgba(0,0,0,0.02); }
+        .q-btn:hover { transform: translateY(-2px); box-shadow: 0 4px 10px rgba(0,0,0,0.08); }
+        
+        .st-not-visited { background: var(--not-visited); color: var(--text-muted); border: 1px solid var(--border-color); }
+        .st-not-answered { background: var(--not-answered); color: #fff; }
+        .st-answered { background: var(--answered); color: #fff; }
         .st-marked { background: var(--marked); color: #fff; border-radius: 50%; }
         .st-answered-marked { background: var(--answered-marked); color: #fff; border-radius: 50%; position: relative; }
-        .st-answered-marked::after { content: '✓'; position: absolute; bottom: -5px; right: -5px; background: #28a745; border-radius: 50%; width: 14px; height: 14px; font-size: 10px; }
+        .st-answered-marked::after { content: ''; position: absolute; bottom: 4px; right: 4px; background: #10b981; border-radius: 50%; width: 8px; height: 8px; border: 2px solid var(--answered-marked); }
         
         /* --- Report View --- */
         #report-view { padding: 40px; overflow-y: auto; }
-        .report-card { background: #fff; padding: 30px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); max-width: 800px; margin: 0 auto; }
-        .score-box { text-align: center; font-size: 30px; font-weight: bold; color: var(--ssc-blue); margin: 20px 0; }
-        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
-        th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
-        th { background: #f4f6f9; }
-        .correct-row { background-color: #d4edda; }
-        .wrong-row { background-color: #f8d7da; }
+        .report-card { background: var(--card-bg); padding: 50px; border-radius: 24px; box-shadow: 0 20px 50px rgba(0,0,0,0.05); max-width: 900px; margin: 0 auto; }
+        .report-card h2 { margin-top: 0; font-size: 28px; letter-spacing: -0.5px;}
+        .score-box { text-align: center; font-size: 40px; font-weight: 700; color: var(--ssc-blue); margin: 30px 0; background: var(--score-bg); padding: 30px; border-radius: 16px; border: 1px solid var(--score-border);}
+        table { width: 100%; border-collapse: separate; border-spacing: 0; margin-top: 20px; border: 1px solid var(--border-color); border-radius: 12px; overflow: hidden; }
+        th, td { padding: 18px 20px; text-align: left; border-bottom: 1px solid var(--border-color); }
+        th { background: var(--not-visited); font-weight: 600; color: var(--text-muted); text-transform: uppercase; font-size: 13px; letter-spacing: 0.5px; }
+        td { color: var(--text-main); font-size: 15px; }
+        tr:last-child td { border-bottom: none; }
+        .correct-row { background-color: var(--correct-bg); }
+        .wrong-row { background-color: var(--wrong-bg); }
+
+        /* --- Responsive Styles --- */
+        @media (max-width: 768px) {
+            body { background: var(--card-bg); }
+            .home-card { width: 95%; padding: 30px 20px; box-shadow: none; border-radius: 0; background: transparent; }
+            .exam-container { flex-direction: column; padding: 0; gap: 0;}
+            .main-content { padding: 20px; border-radius: 0; box-shadow: none; background: transparent; }
+            .sidebar { 
+                position: fixed; 
+                right: -100%; 
+                top: 0; 
+                bottom: 0; 
+                width: 85%; 
+                max-width: 340px; 
+                z-index: 1000; 
+                transition: right 0.3s cubic-bezier(0.16, 1, 0.3, 1); 
+                box-shadow: -10px 0 30px rgba(0,0,0,0.1);
+                border-radius: 20px 0 0 20px;
+                border: none;
+            }
+            .sidebar.open { right: 0; }
+            .sidebar-overlay { 
+                display: none; 
+                position: fixed; 
+                top: 0; left: 0; right: 0; bottom: 0; 
+                background: rgba(15, 23, 42, 0.4); 
+                backdrop-filter: blur(2px);
+                z-index: 999; 
+            }
+            .sidebar-overlay.active { display: block; animation: fadeIn 0.3s ease; }
+            .action-bar { flex-wrap: wrap; gap: 10px; border-top: none; padding-top: 10px;}
+            .action-bar .btn { flex: 1 1 calc(50% - 10px); padding: 14px 5px; font-size: 14px; margin-top: 0;}
+            header { flex-wrap: wrap; text-align: center; padding: 15px 20px; }
+            #exam-title { width: 100%; margin-bottom: 12px; font-size: 18px;}
+            .timer-box { margin: 0 auto; font-size: 16px;}
+            .section-tabs { display: flex; overflow-x: auto; -webkit-overflow-scrolling: touch; padding-bottom: 5px; margin-bottom: 25px; gap: 20px; }
+            .tab { flex-shrink: 0; white-space: nowrap; padding-bottom: 10px; }
+            #mobile-palette-toggle { display: block; }
+            .report-card { padding: 20px; box-shadow: none; border-radius: 0;}
+            table, thead, tbody, th, td, tr { display: block; }
+            th { display: none; }
+            td { position: relative; padding-left: 45%; text-align: right; padding-top: 12px; padding-bottom: 12px;}
+            td::before { content: attr(data-label); position: absolute; left: 15px; width: 40%; font-weight: 600; text-align: left; color: var(--text-muted); font-size: 13px; text-transform: uppercase;}
+            #q-text { font-size: 17px; margin-bottom: 30px; }
+        }
+        @media (min-width: 769px) {
+            #mobile-palette-toggle { display: none; }
+            .sidebar-overlay { display: none; }
+        }
+        #mobile-palette-toggle { 
+            background: var(--not-visited); 
+            color: var(--text-main); 
+            border: 1px solid var(--border-color); 
+            padding: 16px; 
+            border-radius: 12px; 
+            cursor: pointer; 
+            margin-top: 25px;
+            width: 100%;
+            font-size: 16px;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+        #mobile-palette-toggle:active { background: #e2e8f0; }
+        .sidebar-close {
+            text-align: right;
+            padding: 20px;
+            background: var(--card-bg);
+            color: var(--text-main);
+            border-bottom: 1px solid var(--border-color);
+            cursor: pointer;
+            display: none;
+            font-weight: 600;
+            font-size: 16px;
+        }
+        @media (max-width: 768px) {
+            .sidebar-close { display: block; }
+        }
+
+        /* Dark mode toggle */
+        .theme-toggle {
+            position: fixed; top: 15px; right: 20px; z-index: 1100;
+            width: 44px; height: 44px; border-radius: 50%; border: 1px solid var(--border-color);
+            background: var(--card-bg); color: var(--text-main); cursor: pointer;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 20px; transition: all 0.3s ease;
+            box-shadow: 0 2px 10px var(--shadow-light);
+        }
+        .theme-toggle:hover { transform: scale(1.1); }
     </style>
 </head>
 <body>
+
+    <button class="theme-toggle" id="theme-toggle" onclick="toggleTheme()" title="Toggle dark mode">🌙</button>
 
     <!-- HOME VIEW -->
     <div id="home-view" class="view active">
         <div class="home-card">
             <h1>SSC Exam Portal</h1>
-            <p>Upload your <code>exam.json</code> to begin</p>
+            
+            <div id="available-exams-container" style="display: none; text-align: left; margin-bottom: 20px;">
+                <h3 style="margin-top:0; color: var(--ssc-blue);">Available Exams</h3>
+                <div id="exams-list" style="max-height: 200px; overflow-y: auto;"></div>
+            </div>
+
+            <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 20px 0;">
+
+            <p style="margin: 0 0 10px 0; font-size:14px; color:var(--text-muted);">Or upload your own <code>exam.json</code></p>
             <input type="file" id="exam-file" class="file-upload" accept=".json">
             <br>
-            <input type="text" id="candidate-name" placeholder="Enter your name" style="padding: 10px; width: 80%; margin-bottom: 20px;">
+            <input type="text" id="candidate-name" placeholder="Name" style="padding: 10px; width: 80%; margin-bottom: 20px;">
+            <br>
+            <select id="exam-duration" style="padding: 10px; width: 85%; margin-bottom: 20px; font-size: 14px; border: 1px solid #ccc; border-radius: 5px;">
+                <option value="900">15 Minutes</option>
+                <option value="1800">30 Minutes</option>
+                <option value="3600" selected>1 Hour</option>
+                <option value="7200">2 Hours</option>
+                <option value="unlimited">No Time Limit</option>
+                <option value="default">Default Exam Time (from file)</option>
+            </select>
             <br>
             <button class="btn btn-primary" onclick="startExam()">Start Exam</button>
-            <p style="margin-top:20px; font-size:12px; color:#666;">Or upload the provided exam.json</p>
         </div>
     </div>
 
     <!-- EXAM VIEW -->
     <div id="exam-view" class="view">
         <header>
-            <div id="exam-title">SSC CGL Tier-I</div>
+            <div>
+                <div id="exam-title">SSC CGL Tier-I</div>
+                <div id="header-cand-name" style="font-size: 14px; color: var(--text-muted); font-weight: 500; margin-top: 5px;"></div>
+            </div>
             <div class="timer-box" id="timer-display">00:00:00</div>
         </header>
         <div class="exam-container">
@@ -121,13 +305,16 @@
                 </div>
                 <div class="action-bar">
                     <button class="btn btn-success" onclick="saveAndNext()">Save & Next</button>
-                    <button class="btn" style="background:#ffc107;" onclick="markAndNext()">Mark for Review & Next</button>
+                    <button class="btn btn-warning" onclick="markAndNext()">Mark & Next</button>
                     <button class="btn btn-secondary" onclick="clearResponse()">Clear Response</button>
-                    <button class="btn" style="margin-left:auto; background:var(--ssc-dark);" onclick="submitExam()">Submit Exam</button>
+                    <button class="btn" style="background:var(--not-answered); color:#fff;" onclick="submitExam()">Submit</button>
                 </div>
+                <button id="mobile-palette-toggle" onclick="toggleSidebar()">View Question Palette</button>
             </div>
             
-            <div class="sidebar">
+            <div class="sidebar-overlay" id="sidebar-overlay" onclick="toggleSidebar()"></div>
+            <div class="sidebar" id="sidebar">
+                <div class="sidebar-close" onclick="toggleSidebar()">Close &times;</div>
                 <div class="profile-area">
                     <strong id="cand-name-display">Candidate Name</strong>
                 </div>
@@ -154,11 +341,11 @@
             <table id="section-table">
                 <thead>
                     <tr>
-                        <th>Section</th>
-                        <th>Correct</th>
-                        <th>Incorrect</th>
-                        <th>Unattempted</th>
-                        <th>Score</th>
+                        <th data-label="Section">Section</th>
+                        <th data-label="Correct">Correct</th>
+                        <th data-label="Incorrect">Incorrect</th>
+                        <th data-label="Unattempted">Unattempted</th>
+                        <th data-label="Score">Score</th>
                     </tr>
                 </thead>
                 <tbody></tbody>
@@ -168,11 +355,11 @@
             <table id="q-review-table">
                 <thead>
                     <tr>
-                        <th>Q#</th>
-                        <th>Question</th>
-                        <th>Your Answer</th>
-                        <th>Correct</th>
-                        <th>Status</th>
+                        <th data-label="Q#">Q#</th>
+                        <th data-label="Question">Question</th>
+                        <th data-label="Your Answer">Your Answer</th>
+                        <th data-label="Correct">Correct</th>
+                        <th data-label="Status">Status</th>
                     </tr>
                 </thead>
                 <tbody></tbody>
@@ -191,6 +378,8 @@
         let timer = null;
         let timeRemaining = 0;
         let sectionLocked = []; // array of bools
+        let globalTimer = false;
+        let globalTimeRemaining = 0;
 
         const DOM = {
             home: document.getElementById('home-view'),
@@ -202,13 +391,81 @@
             options: document.getElementById('options-container'),
             tabs: document.getElementById('section-tabs'),
             palette: document.getElementById('palette-grid'),
-            timer: document.getElementById('timer-display')
+            timer: document.getElementById('timer-display'),
+            availExamsContainer: document.getElementById('available-exams-container'),
+            examsList: document.getElementById('exams-list')
         };
 
-        // Load JSON File
+        // Auto-load available exams
+        window.addEventListener('DOMContentLoaded', () => {
+            fetch('exams/index.json')
+                .then(res => {
+                    if (!res.ok) throw new Error("Could not fetch index.json");
+                    return res.json();
+                })
+                .then(data => {
+                    if (data && data.length > 0) {
+                        DOM.availExamsContainer.style.display = 'block';
+                        data.forEach(exam => {
+                            const btn = document.createElement('button');
+                            btn.className = 'btn btn-secondary';
+                            btn.style.display = 'block';
+                            btn.style.width = '100%';
+                            btn.style.marginBottom = '10px';
+                            btn.style.textAlign = 'left';
+                            btn.style.whiteSpace = 'nowrap';
+                            btn.style.overflow = 'hidden';
+                            btn.style.textOverflow = 'ellipsis';
+                            btn.innerText = exam.title;
+                            btn.onclick = () => loadExamFromServer(exam.file, btn);
+                            DOM.examsList.appendChild(btn);
+                        });
+                    }
+                })
+                .catch(err => {
+                    console.log("Could not auto-load exams. Using manual upload fallback.", err);
+                });
+        });
+
+        function loadExamFromServer(filename, btnElement) {
+            // Reset all buttons to default look
+            const allBtns = DOM.examsList.querySelectorAll('button');
+            allBtns.forEach(b => {
+                b.style.backgroundColor = '';
+                b.style.borderColor = '';
+                b.style.color = '';
+            });
+            // Highlight selected exam
+            btnElement.style.backgroundColor = 'var(--answered)';
+            btnElement.style.borderColor = 'var(--answered)';
+            btnElement.style.color = '#fff';
+
+            fetch('exams/' + encodeURIComponent(filename))
+                .then(res => {
+                    if(!res.ok) throw new Error("Network error");
+                    return res.json();
+                })
+                .then(data => {
+                    examData = data;
+                    alert(`Loaded: ${examData.meta.title}`);
+                })
+                .catch(err => {
+                    alert("Error loading exam file. Please check server.");
+                    btnElement.style.backgroundColor = '';
+                    btnElement.style.borderColor = '';
+                    btnElement.style.color = '';
+                });
+        }
+
+        // Load JSON File Manually
         DOM.file.addEventListener('change', function(e) {
             const file = e.target.files[0];
             if (!file) return;
+            
+            // Clear any selected server exams
+            const allBtns = DOM.examsList.querySelectorAll('button');
+            allBtns.forEach(b => { b.style.backgroundColor = ''; b.style.borderColor = ''; b.style.color = ''; });
+
             const reader = new FileReader();
             reader.onload = function(e) {
                 try {
@@ -228,7 +485,19 @@
             }
             candidateName = document.getElementById('candidate-name').value || "Candidate";
             document.getElementById('cand-name-display').innerText = candidateName;
+            document.getElementById('header-cand-name').innerText = "Candidate: " + candidateName;
             document.getElementById('exam-title').innerText = examData.meta.title;
+            
+            const durationOpt = document.getElementById('exam-duration').value;
+            if (durationOpt === 'unlimited') {
+                globalTimer = true;
+                globalTimeRemaining = -1;
+            } else if (durationOpt !== 'default') {
+                globalTimer = true;
+                globalTimeRemaining = parseInt(durationOpt, 10);
+            } else {
+                globalTimer = false;
+            }
             
             // Initialize State
             examData.sections.forEach((sec, sIdx) => {
@@ -250,14 +519,21 @@
                 alert("This section is locked.");
                 return;
             }
-            // Lock previous section if sectional timer mode
-            if (examData.meta.timer_mode === 'sectional' && currentSectionIdx !== sIdx) {
-                sectionLocked[currentSectionIdx] = true;
+            // SSC strict policy: lock ALL previous sections when moving forward
+            if (currentSectionIdx !== sIdx) {
+                for (let i = 0; i < sIdx; i++) {
+                    sectionLocked[i] = true;
+                }
             }
             
             currentSectionIdx = sIdx;
             currentQuestionIdx = 0;
-            timeRemaining = examData.sections[sIdx].time;
+            
+            if (!globalTimer) {
+                timeRemaining = examData.sections[sIdx].time;
+            } else {
+                timeRemaining = globalTimeRemaining; // Use global timer
+            }
             
             renderTabs();
             renderPalette();
@@ -301,7 +577,7 @@
             }
 
             DOM.qNumber.innerText = `Question ${qIdx + 1}`;
-            DOM.qText.innerText = q.text;
+            DOM.qText.innerHTML = q.text; // Ensure HTML/LaTeX renders correctly if embedded
             
             DOM.options.innerHTML = '';
             q.options.forEach((opt, optIdx) => {
@@ -369,6 +645,13 @@
             }
         }
 
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            const overlay = document.getElementById('sidebar-overlay');
+            sidebar.classList.toggle('open');
+            overlay.classList.toggle('active');
+        }
+
         function updateStats() {
             const sec = examData.sections[currentSectionIdx];
             let counts = { answered: 0, not_answered: 0, not_visited: 0, marked: 0, answered_marked: 0 };
@@ -384,8 +667,14 @@
 
         function startTimer() {
             clearInterval(timer);
+            if (globalTimer && globalTimeRemaining === -1) {
+                DOM.timer.innerText = "No Limit";
+                return;
+            }
             timer = setInterval(() => {
                 timeRemaining--;
+                if (globalTimer) globalTimeRemaining = timeRemaining;
+
                 let h = Math.floor(timeRemaining / 3600);
                 let m = Math.floor((timeRemaining % 3600) / 60);
                 let s = timeRemaining % 60;
@@ -393,13 +682,19 @@
                 
                 if (timeRemaining <= 0) {
                     clearInterval(timer);
-                    alert("Time's up for this section!");
-                    sectionLocked[currentSectionIdx] = true;
-                    // Try to move to next section
-                    if (currentSectionIdx < examData.sections.length - 1) {
-                        loadSection(currentSectionIdx + 1);
-                    } else {
+                    
+                    if (globalTimer) {
+                        alert("Time's up for the entire exam!");
                         submitExam();
+                    } else {
+                        alert("Time's up for this section!");
+                        sectionLocked[currentSectionIdx] = true;
+                        // Try to move to next section
+                        if (currentSectionIdx < examData.sections.length - 1) {
+                            loadSection(currentSectionIdx + 1);
+                        } else {
+                            submitExam();
+                        }
                     }
                 }
             }, 1000);
@@ -451,11 +746,11 @@
                     const tr = document.createElement('tr');
                     tr.className = rowClass;
                     tr.innerHTML = `
-                        <td>${sIdx + 1}.${qIdx + 1}</td>
-                        <td>${q.text}<br><small><i>${q.explanation}</i></small></td>
-                        <td>${st.selected || '-'}</td>
-                        <td>${q.correct}</td>
-                        <td>${statusStr}</td>
+                        <td data-label="Q#">${sIdx + 1}.${qIdx + 1}</td>
+                        <td data-label="Question">${q.text}<br><small><i>${q.explanation || ''}</i></small></td>
+                        <td data-label="Your Answer">${st.selected || '-'}</td>
+                        <td data-label="Correct">${q.correct}</td>
+                        <td data-label="Status">${statusStr}</td>
                     `;
                     qTbody.appendChild(tr);
                 });
@@ -463,17 +758,35 @@
                 let secScore = secCorrect - (secWrong * neg);
                 const trSec = document.createElement('tr');
                 trSec.innerHTML = `
-                    <td>${sec.name}</td>
-                    <td>${secCorrect}</td>
-                    <td>${secWrong}</td>
-                    <td>${secUnattempted}</td>
-                    <td>${secScore}</td>
+                    <td data-label="Section">${sec.name}</td>
+                    <td data-label="Correct">${secCorrect}</td>
+                    <td data-label="Incorrect">${secWrong}</td>
+                    <td data-label="Unattempted">${secUnattempted}</td>
+                    <td data-label="Score">${secScore}</td>
                 `;
                 secTbody.appendChild(trSec);
             });
 
             document.getElementById('final-score').innerText = `Score: ${totalScore} / ${totalMax}`;
         }
+
+        // Dark mode toggle
+        function toggleTheme() {
+            const html = document.documentElement;
+            const isDark = html.getAttribute('data-theme') === 'dark';
+            html.setAttribute('data-theme', isDark ? 'light' : 'dark');
+            document.getElementById('theme-toggle').innerText = isDark ? '🌙' : '☀️';
+            localStorage.setItem('theme', isDark ? 'light' : 'dark');
+        }
+
+        // Auto-detect theme on load
+        (function() {
+            const saved = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const theme = saved || (prefersDark ? 'dark' : 'light');
+            document.documentElement.setAttribute('data-theme', theme);
+            document.getElementById('theme-toggle').innerText = theme === 'dark' ? '☀️' : '🌙';
+        })();
     </script>
 </body>
 </html>

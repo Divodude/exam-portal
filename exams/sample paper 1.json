@@ -1,0 +1,342 @@
+{
+"meta": {
+"title": "SSC Stenographer Grade C & D - 30 Minute Mock Test",
+"exam_type": "SSC_STENOGRAPHER",
+"date": "2026-09-04",
+"total_time": 1800,
+"timer_mode": "sectional",
+"negative_marking": 0.25,
+"bilingual": true,
+"instructions": [
+"The examination consists of Objective Type, Multiple choice questions.",
+"The total duration for this practice test is 30 minutes.",
+"There will be a negative marking of 0.25 marks for each wrong answer.",
+"No marks will be deducted for unattempted questions.",
+"The English Language and Comprehension section must be attempted in English only.",
+"Candidates are not permitted to use calculators or any other electronic devices."
+]
+},
+"sections": [
+{
+"id": "sec_reasoning_01",
+"name": "General Intelligence & Reasoning",
+"time": 360,
+"questions": [
+{
+"id": 1,
+"text": "Look at this series: 7, 10, 8, 11, 9, 12, ... What number should come next?",
+"options": [
+"A) 7",
+"B) 10",
+"C) 12",
+"D) 13"
+],
+"correct": "B",
+"explanation": "This is a simple alternating addition and subtraction series. The pattern is +3, -2, +3, -2, and so on. (7+3=10; 10-2=8; 8+3=11; 11-2=9; 9+3=12). The next step is 12-2=10."
+},
+{
+"id": 2,
+"text": "Select the related word pair from the given alternatives: Book : Publisher :: Film : ?",
+"options": [
+"A) Writer",
+"B) Editor",
+"C) Director",
+"D) Producer"
+],
+"correct": "D",
+"explanation": "Just as a 'Publisher' is responsible for financing and producing a 'Book', a 'Producer' is responsible for financing and producing a 'Film'."
+},
+{
+"id": 3,
+"text": "In a certain code language, 'DOG' is written as 'EPH'. How is 'CAT' written in that language?",
+"options": [
+"A) BZS",
+"B) DBU",
+"C) ECV",
+"D) BBT"
+],
+"correct": "B",
+"explanation": "Each letter in the word is shifted forward by one place in the alphabetical order. D(+1)=E, O(+1)=P, G(+1)=H. Similarly, C(+1)=D, A(+1)=B, T(+1)=U. So, CAT becomes DBU."
+},
+{
+"id": 4,
+"text": "Pointing to a woman, Abhijit said, 'Her granddaughter is the only daughter of my brother.' How is the woman related to Abhijit?",
+"options": [
+"A) Sister",
+"B) Grandmother",
+"C) Mother-in-law",
+"D) Mother"
+],
+"correct": "D",
+"explanation": "Abhijit's brother's only daughter is Abhijit's niece. The woman's granddaughter is this niece. Therefore, the woman must be the mother of Abhijit and his brother."
+},
+{
+"id": 5,
+"text": "Statements: All cars are cats. All fans are cats. \nConclusions: I. All cars are fans. II. Some fans are cars.",
+"options": [
+"A) Only conclusion I follows",
+"B) Only conclusion II follows",
+"C) Both conclusions follow",
+"D) Neither conclusion I nor II follows"
+],
+"correct": "D",
+"explanation": "Cars and fans are both subsets of cats, but there is no direct relationship established between cars and fans in the statements. Therefore, neither conclusion logically follows."
+}
+]
+},
+{
+"id": "sec_awareness_02",
+"name": "General Awareness",
+"time": 360,
+"questions": [
+{
+"id": 6,
+"text": "Article 32 of the Indian Constitution deals with which of the following?",
+"options": [
+"A) Right to Equality",
+"B) Right to Constitutional Remedies",
+"C) Right to Freedom",
+"D) Right against Exploitation"
+],
+"correct": "B",
+"explanation": "Article 32 provides the Right to Constitutional Remedies, which means a person has the right to move to the Supreme Court for getting their fundamental rights protected. Dr. B.R. Ambedkar called it the 'heart and soul' of the Constitution."
+},
+{
+"id": 7,
+"text": "Who among the following was affectionately known as the 'Frontier Gandhi'?",
+"options": [
+"A) Mahatma Gandhi",
+"B) Khan Abdul Ghaffar Khan",
+"C) Bal Gangadhar Tilak",
+"D) Lala Lajpat Rai"
+],
+"correct": "B",
+"explanation": "Khan Abdul Ghaffar Khan was a Pashtun independence activist and was commonly known as Frontier Gandhi because of his close association with Mahatma Gandhi and his adherence to non-violence."
+},
+{
+"id": 8,
+"text": "Which of the following is the longest river in Peninsular India?",
+"options": [
+"A) Narmada",
+"B) Krishna",
+"C) Godavari",
+"D) Mahanadi"
+],
+"correct": "C",
+"explanation": "The Godavari is the largest and longest river in Peninsular India. It is also known as the Dakshin Ganga (Ganges of the South)."
+},
+{
+"id": 9,
+"text": "What is the chemical name of Vitamin C?",
+"options": [
+"A) Retinol",
+"B) Ascorbic Acid",
+"C) Calciferol",
+"D) Thiamine"
+],
+"correct": "B",
+"explanation": "The chemical name of Vitamin C is Ascorbic Acid. Its deficiency causes scurvy. Retinol is Vitamin A, Calciferol is Vitamin D, and Thiamine is Vitamin B1."
+},
+{
+"id": 10,
+"text": "The famous 'Hornbill Festival' is celebrated in which of the following states of India?",
+"options": [
+"A) Nagaland",
+"B) Assam",
+"C) Manipur",
+"D) Meghalaya"
+],
+"correct": "A",
+"explanation": "The Hornbill Festival is a major annual cultural festival organized by the State Tourism and Art & Culture Departments of Nagaland, showcasing the state's rich traditions."
+}
+]
+},
+{
+"id": "sec_english_03",
+"name": "English Language and Comprehension",
+"time": 1080,
+"questions": [
+{
+"id": 11,
+"text": "Choose the correct synonym of the given word: OBSOLETE",
+"options": [
+"A) Recent",
+"B) Outdated",
+"C) Contemporary",
+"D) Novel"
+],
+"correct": "B",
+"explanation": "Obsolete means no longer produced or used; out of date. Therefore, 'Outdated' is the closest synonym."
+},
+{
+"id": 12,
+"text": "Choose the correct antonym of the given word: TRANSPARENT",
+"options": [
+"A) Clear",
+"B) Opaque",
+"C) Translucent",
+"D) Fragile"
+],
+"correct": "B",
+"explanation": "Transparent means allowing light to pass through so that objects behind can be distinctly seen. 'Opaque' means not able to be seen through; not transparent."
+},
+{
+"id": 13,
+"text": "Select the most appropriate meaning of the given idiom: 'A piece of cake'",
+"options": [
+"A) A difficult task",
+"B) A tasty dessert",
+"C) A very easy task",
+"D) A hidden enemy"
+],
+"correct": "C",
+"explanation": "The idiom 'A piece of cake' is used to describe a task that can be accomplished very easily."
+},
+{
+"id": 14,
+"text": "Select the most appropriate meaning of the given idiom: 'Bite the bullet'",
+"options": [
+"A) To get into a physical fight",
+"B) To face a difficult or unpleasant situation bravely",
+"C) To eat something very hard",
+"D) To run away from danger"
+],
+"correct": "B",
+"explanation": "'To bite the bullet' means to endure a painful or otherwise unpleasant situation that is seen as unavoidable."
+},
+{
+"id": 15,
+"text": "Identify the segment in the sentence which contains a grammatical error: 'Neither of the two sisters are going to the party.'",
+"options": [
+"A) Neither of",
+"B) the two sisters",
+"C) are going",
+"D) to the party"
+],
+"correct": "C",
+"explanation": "The error lies in 'are going'. 'Neither of' is followed by a plural noun/pronoun but takes a singular verb. It should be 'is going'."
+},
+{
+"id": 16,
+"text": "Identify the segment in the sentence which contains a grammatical error: 'He is one of the best student in his class.'",
+"options": [
+"A) He is",
+"B) one of the best",
+"C) student in",
+"D) his class"
+],
+"correct": "C",
+"explanation": "The phrase 'one of the' must always be followed by a plural noun. So, it should be 'students' instead of 'student'."
+},
+{
+"id": 17,
+"text": "Fill in the blank with the most appropriate word: 'She has been living in this city ___ 2015.'",
+"options": [
+"A) from",
+"B) for",
+"C) since",
+"D) in"
+],
+"correct": "C",
+"explanation": "'Since' is used for a point in time (a specific year, day, time, etc.), whereas 'for' is used for a period or duration of time. Since 2015 is a specific point, 'since' is correct."
+},
+{
+"id": 18,
+"text": "Fill in the blank with the most appropriate preposition: 'I am not very good ___ mathematics.'",
+"options": [
+"A) in",
+"B) at",
+"C) with",
+"D) on"
+],
+"correct": "B",
+"explanation": "The correct preposition to use after the adjective 'good' to indicate proficiency in a subject or activity is 'at' (e.g., good at sports, good at math)."
+},
+{
+"id": 19,
+"text": "Select the correct passive form of the given sentence: 'The mechanic repaired my car.'",
+"options": [
+"A) My car is repaired by the mechanic.",
+"B) My car was repaired by the mechanic.",
+"C) My car has been repaired by the mechanic.",
+"D) My car is being repaired by the mechanic."
+],
+"correct": "B",
+"explanation": "The active sentence is in simple past tense (repaired). The passive format for simple past is 'was/were + V3'. Thus, 'was repaired' is correct."
+},
+{
+"id": 20,
+"text": "Select the correct active form of the given sentence: 'Let the door be closed.'",
+"options": [
+"A) Close the door.",
+"B) You close the door.",
+"C) The door is closed.",
+"D) Someone close the door."
+],
+"correct": "A",
+"explanation": "The given passive sentence is an imperative command. The active form of 'Let + object + be + V3' is an imperative starting with V1 + object (Close the door)."
+},
+{
+"id": 21,
+"text": "Select the correct indirect form of the given sentence: He said, 'I have passed the examination.'",
+"options": [
+"A) He said that he had passed the examination.",
+"B) He said that he has passed the examination.",
+"C) He said that I had passed the examination.",
+"D) He told that he passed the examination."
+],
+"correct": "A",
+"explanation": "The reporting verb 'said' is in past tense. So, present perfect (have passed) changes to past perfect (had passed) in indirect speech. The pronoun 'I' changes to 'he'."
+},
+{
+"id": 22,
+"text": "Select the correct indirect form of the given sentence: The teacher said to the students, 'The earth revolves around the sun.'",
+"options": [
+"A) The teacher told the students that the earth revolved around the sun.",
+"B) The teacher asked the students if the earth revolves around the sun.",
+"C) The teacher told the students that the earth revolves around the sun.",
+"D) The teacher said to the students the earth revolve around the sun."
+],
+"correct": "C",
+"explanation": "When the reported speech states a universal truth or a scientific fact, the tense remains unchanged. 'Said to' changes to 'told'."
+},
+{
+"id": 23,
+"text": "Select the most appropriate option to substitute the underlined segment: 'He is the best of the two boys.'",
+"options": [
+"A) better of the two",
+"B) most best of the two",
+"C) good of the two",
+"D) No improvement"
+],
+"correct": "A",
+"explanation": "When comparing two things or people, the comparative degree must be used, not the superlative degree. Therefore, 'better' is correct instead of 'best'."
+},
+{
+"id": 24,
+"text": "Select the word which means the same as the group of words given: 'A person who cannot read or write'",
+"options": [
+"A) Illiterate",
+"B) Ignorant",
+"C) Scholar",
+"D) Uneducated"
+],
+"correct": "A",
+"explanation": "'Illiterate' specifically refers to someone unable to read or write. 'Uneducated' is broader and means poorly educated, while 'Ignorant' means lacking knowledge."
+},
+{
+"id": 25,
+"text": "Select the correctly spelt word.",
+"options": [
+"A) Acommodation",
+"B) Accomodation",
+"C) Accommodation",
+"D) Acomodation"
+],
+"correct": "C",
+"explanation": "The correct spelling is 'Accommodation', which requires double 'c' and double 'm'."
+}
+]
+}
+]
+}

@@ -1,0 +1,67 @@
+{
+    "meta": {
+        "title": "Example Exam Title",
+        "exam_type": "EXAM_CATEGORY_OR_TYPE",
+        "date": "YYYY-MM-DD",
+        "total_time": 7200,
+        "timer_mode": "sectional", 
+        "negative_marking": 0.25,
+        "bilingual": false,
+        "instructions": [
+            "Instruction 1 for the students.",
+            "Instruction 2 regarding marking, e.g., Negative marking of 0.25 per incorrect answer."
+        ]
+    },
+    "sections": [
+        {
+            "id": "section_1_id",
+            "name": "Section 1 Name (e.g. General Awareness)",
+            "time": 1800,
+            "questions": [
+                {
+                    "id": 1,
+                    "text": "The question text goes here. What is the capital of France?",
+                    "options": [
+                        "A) Option A text",
+                        "B) Option B text",
+                        "C) Option C text",
+                        "D) Option D text"
+                    ],
+                    "correct": "A",
+                    "explanation": "Detailed explanation of the answer goes here."
+                },
+                {
+                    "id": 2,
+                    "text": "Question 2 text...",
+                    "options": [
+                        "A) ...",
+                        "B) ...",
+                        "C) ...",
+                        "D) ..."
+                    ],
+                    "correct": "C",
+                    "explanation": "Explanation for question 2."
+                }
+            ]
+        },
+        {
+            "id": "section_2_id",
+            "name": "Section 2 Name",
+            "time": 3600,
+            "questions": [
+                {
+                    "id": 3,
+                    "text": "Question 3 text...",
+                    "options": [
+                        "A) ...",
+                        "B) ...",
+                        "C) ...",
+                        "D) ..."
+                    ],
+                    "correct": "B",
+                    "explanation": "Explanation for question 3."
+                }
+            ]
+        }
+    ]
+}
